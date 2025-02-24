@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #e54e4e ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-250px,-100px);
+    background: linear-gradient(90deg,#f5d776,#f3f5f5 );
+}
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(250px,100px);
+    background: linear-gradient(90deg,#f5d776,#f3f5f5 );
+}
+.container{
+    position: relative;
+    height: 325px;
+    width: 425px;
+    z-index:100 ;
+    transition:0.6s;
+    transform-style: preserve-3d;
+
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
+.container .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(255,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.1);
+    backface-visibility:hidden;
+}
+#zeroa{
+    display: flex;
+    justify-content: center;
+    margin-top: 1px;
+}
+#zerob{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 850;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+.card.front-face{
+    transform: rotateY(0deg);
+}
+.card.back-face{
+    transform: rotateY(180deg);
+}
+.front-face .logo  img{
+    width: 250px;
+    height: 250px;
+    margin-top: 27.5px;
+    margin-left: 87.5px;
+}
+.card.back-face a{
+    display: flex;
+    justify-content: center;
+    border:none;
+    text-decoration: none;
+    color: black;
+    
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-size: 13.5px; 
+}
