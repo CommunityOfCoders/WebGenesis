@@ -1,0 +1,45 @@
+*
+{
+padding :0;
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+ul
+{
+list-style: none;
+background :rgba(210, 53, 53, 0.961) ;
+}
+ul li {
+    display:inline-block;
+    position: relative;
+
+}
+ul li a{
+    display:block ;
+    padding: 20px 25px ;
+    color:aliceblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+
+}
+ul li ul.drop{
+    display:block;
+
+}
+ul li ul.drop 
+{
+    width: 100px;
+    background: rgba(249, 115, 115, 0.606);
+    position: absolute;
+    z-index: none;
+    display: none;
+}
+ul li a:hover{
+    background: rgb(250, 122, 122) ;
+
+}
+ul li:hover ul.drop{
+    display : block;
+}

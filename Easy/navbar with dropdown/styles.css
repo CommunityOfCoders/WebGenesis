@@ -1,0 +1,73 @@
+.videotitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold ;
+    text-align: left ;
+    line-height:20px;
+    margin-bottom: 5px;
+        }
+    
+        .stats{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            line-height: 10px;
+            color: rgb(109, 111, 113);
+            margin-top: 1px;
+        }
+        .a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            line-height: 10px;
+            color: rgb(109, 111, 113);
+            margin-bottom: 2px;
+        }
+    
+        .subbutton 
+        {
+            background-color:rgb(219, 0, 0);
+            color:white;
+            border:none;
+            height:30px;
+            width:90px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right:5px;
+            transition:opacity 0.15s;
+            margin-top: 2px;
+            }
+        .subbutton:hover {
+            opacity: 0.3;
+        }
+        .subbutton:active {
+            opacity: 0.7;
+        }
+    
+        .c{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            line-height: 10px;
+            color: rgb(109, 111, 113);
+            margin-bottom: 2px;
+            margin-top: 2px;
+        }
+         .d{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 10px;
+            color: rgb(224, 227, 230);
+            margin-bottom: 2px;
+            margin-top: 60px;
+            background-color: crimson;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+           
+        }
+         .e:hover{
+            color: rgb(12, 13, 14);
+            text-decoration: underline;
+            transition-duration: 0.3s;
+            cursor: pointer;
+            
+        }
+    
