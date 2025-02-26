@@ -1,0 +1,45 @@
+body {
+    background-color: #daffdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; 
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: large;
+}
+/* Button styling */
+.login-btn {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.login-btn:hover {
+    background-color: #38813d;
+}
+
