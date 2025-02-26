@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Headland+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Content:wght@400;700&family=Headland+One&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("C:/Users/ASUS/OneDrive/Desktop/Xplore/portfolio/newportfolio/assets/bgimg.avif");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+     
+}
+nav{
+    border:  solid hsla(0, 11%, 80%, 0.16);
+    height: 12vh;
+    width: 90%;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content:space-between;
+    gap: 30px;
+    display: flex;
+    font-family: "Headland One", serif;
+
+    color: #B2B6D1;
+}
+#others{
+    display: flex;
+    gap: 10px;
+}
+#home #contact{
+    font-family: "Headland One";
+  text-align: center;
+}
+#Hireme{
+    position: relative;
+    bottom: 5px;
+    color: #06040A;
+    height: 5vh;
+    width: 5vw;
+    background-color: #CCAC69;
+    border-radius: 20px;
+}
+#Hireme:hover{
+   background-color: #7f7104;
+
+  
+}
+
+#home:hover,#contact:hover,#name:hover{
+  
+    color: white; 
+   
+    border-radius: 5px;
+    text-align: center; 
+   
+}
+#greeting{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ 
+ 
+}
+.logo{
+    height: 6vh;
+}
+.black{
+
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    height: 1000px;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.8);
+   
+    z-index: -1;
+    
+    
+}
+main{
+    position: relative;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Hello{
+    margin-bottom: 0;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif, serif;
+  font-weight: 400;
+   
+ 
+   font-size: 50px;
+
+}
+#nm{
+    margin: 0;
+    font-size: 70px;
+    color: white;
+    font-family: "Bagel Fat One", serif;
+    letter-spacing: 1px;
+}
+.cont{
+    font-size: 22px;
+    position: relative;
+    top: 5vh;
+    margin:2vh;
+    color: rgba(255, 255, 255, 0.452);
+    text-align: center;
+}
+.icons{
+
+    position: relative;
+    top: 20vh;
+    display: flex;
+    gap: 5vh;
+}
+#inst:hover,#linkedin:hover,#git:hover{
+    opacity: 0.6;
+}
+#inst,#linkedin,#git{
+    opacity: 0.8; 
+    height: 10vh;
+
+}
+#git{
+    position: relative;
+    bottom: 30px;
+    height: 20vh;
+}
+/* .ckl{
+    background-color: purple;
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+} */
+ ul{
+   
+    list-style: none;
+   
+  font-weight: 400;
+  font-style: normal;
+ }
+ .skills{
+    line-height: 70px;
+    position: relative;
+    top: 150px;
+    font-size: 35px;
+    color: #f8d43a;
+    opacity: 0.7;
+ }
+ .info{
+   position: relative;
+   left: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    
+ }
+ li:hover{
+     font-family: "Content", serif;
+    opacity: 0.5;
+ }
