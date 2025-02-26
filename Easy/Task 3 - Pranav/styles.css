@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: bisque;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;  /* Default collapsed width */
+    height: 100vh;
+    background-color: #2E2E2E;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Menu Icon */
+#menu-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sidebar expands only when hovering over menu button */
+#sidebar:hover {
+    width: 200px;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 60px 10px 0 10px; /* Spacing for menu */
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar-menu li {
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+}
+
+/* Show menu items when sidebar expands */
+#sidebar:hover .sidebar-menu {
+    opacity: 1;
+}
+
+

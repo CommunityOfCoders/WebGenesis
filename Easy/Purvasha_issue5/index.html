@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(12, 12, 12);
+            color: white;
+            transition: background 0.3s, color 0.3s;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .toggle_button {
+            padding: 16px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background: #caced3;
+            color: rgb(12,12,12);
+            border: none;
+            border-radius: 25px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .feature {
+            color: white;
+        }
+        .cardcontainer {
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            width: 200px;
+            height: 250px;
+            perspective: 1000px;
+            justify-content: center;
+            margin-left: 20px;
+            margin-right: 40px;
+        }
+        .card_inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.8s ease-in-out;
+        }
+        .card:hover .card_inner {
+            transform: rotateY(180deg);
+
+        }
+        .card_front, .card_back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            padding: 10px;
+        }
+        .card_front {
+            background: #666;
+            color: white;
+        }
+        .card_back {
+            background: #fff;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+        .dark-mode {
+            background-color: #ececec;
+            color: white;
+        }
+        .dark-mode .feature {
+            color:#333
+        }
+        .dark-mode .card_front {
+            background: #ccc;
+            color:#333
+        }
+        .dark-mode .card_back {
+            background: #777;
+            color:#333
+        }
+        .dark-mode .toggle_button {
+            background: #555;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="toggle_button" onclick="toggle_DarkMode()">🌙 Toggle Dark Mode</button>
+        <div><h2 class="feature">Our Features</h2></div>
+        <div class="cardcontainer">
+            <div class="card">
+                <div class="card_inner">
+                    <div class="card_front">Feature 1</div>
+                    <div class="card_back">Details about Feature 1</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inner">
+                    <div class="card_front">Feature 2</div>
+                    <div class="card_back">Details about Feature 2</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inner">
+                    <div class="card_front">Feature 3</div>
+                    <div class="card_back">Details about Feature 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggle_DarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
