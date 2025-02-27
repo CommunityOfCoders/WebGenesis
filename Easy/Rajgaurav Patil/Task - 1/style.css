@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    font-style: bold;
+    color: rgb(7, 69, 22);
+}
+#log{
+    box-sizing: border-box;
+    width: 50%;
+    border-radius: 5%;
+    background-color : #FBFBF9;
+    padding: 20px;
+    word-spacing: 3px;
+    box-shadow: 4px 4px 4px 4px #ccc;
+    
+     margin: auto;
+}
+input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 10px 10px;
+}
+input:hover{
+    border: 1px solid #000;
+}
+form{
+    text-align: center;
+    font-family: 'Courier New';
+    font-size: 20px;
+   
+}
+p{
+    font-family: 'Georgia';
+    font-size: 16px;
+    text-decoration-line: initial;
+}
+button{
+    background-color: rgb(7, 69, 22);
+    color: #ccc;
+    padding: 12px 90px 12px 90px;
+    border-color: #ccc;
+}
+button:hover{
+    background-color: #ccc;
+    color: rgb(7, 69, 22);
+    border-color: rgb(7, 69, 22);
+}
+#google_logo:hover{
+    background-color: #ccc;
+    color: rgb(8, 2, 62);
+    border-color: rgb(8, 2, 62);
+    box-shadow: 2px 2px 2px 2px #ccc;
+    
+}
+#facebook_logo:hover{
+    background-color: #ccc;
+    color: rgb(8, 2, 62);
+    border-color: rgb(8, 2, 62);
+    box-shadow: 2px 2px 2px 2px #ccc;
+    
+}
+#email_logo:hover{
+    background-color: #ccc;
+    color: rgb(8, 2, 62);
+    border-color: rgb(8, 2, 62);
+    box-shadow: 2px 2px 2px 2px #ccc;
+    
+}
