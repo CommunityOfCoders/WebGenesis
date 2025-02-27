@@ -3,58 +3,83 @@
     <head>
         <style>
             input[type=text] {
-                background-color: aquamarine;
-                height: 20px;
+                background-color: white;
+                height: 40px;
                 width: 200px;
                 text-align: center;
+                border-radius: 30px;
+                border: 3px solid darkblue;
+                font-size: large;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 }
             input[type=password]{
-                background-color: red;
-                height: 20px;
+                background-color: white;
+                height: 40px;
                 width: 200px;
                 text-align: center;
+                border-radius: 30px;
+                border: 3px solid darkblue;
+                font-size: large;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
             label{
-                color: darkblue;
+                color: white;
                 font-size: 30px;
             }
             form {
                 text-align: center;
+                margin-top: 10%;
+                margin-left: 32%;
+                width: 30%;
+                height: 50%;
+                background-color: rgba(38, 19, 121,0.2);
+                border-radius: 25px;
+                border: 2px solid white;
+                padding: 50px;
+                backdrop-filter: blur(3px);
             }
             input[type=reset]{
-                color: blue;
-                background-color: orange;
+                color: white;
+                background-color: skyblue;
                 width: 75px;
                 height: 40px;
                 font-size: large;
+                border-radius: 80px;
+                border: 2px solid darkblue;
             }
             input[type=submit]{
-                color: red;
-                background-color: green;
+                color: white;
+                background-color: skyblue;
                 width: 75px;
                 height: 40px;
                 font-size: large;
+                border-radius: 80px;
+                border: 2px solid darkblue;
             }
             h1{
                 text-align: center;
-                color: indigo;
+                color: white;
+            }
+            body{
+                background-image: url("bg\ image.jpeg");
+                background-repeat: no-repeat;
+            }
+            a{
+                color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
         </style>
         <title>
             Login
         </title>
     </head>
-    <body style="background-color: rgb(154, 212, 235);">
-        <h1>WELCOME!</h1>
+    <body>
         <form>
-            <label for="username">Username:</label>
+            <h1>LOGIN</h1>
+            <input type="text" id="username" placeholder="Username" maxlength="12"> 
             <br>
-            <input type="text" id="username" placeholder="hredayshah" maxlength="12"> 
             <br>
-            <br>
-            <label for="password">Password:</label>
-            <br>
-            <input type="password" id="password" placeholder="hreday@123" maxlength="12"> 
+            <input type="password" id="password" placeholder="Password" maxlength="12"> 
             <br>
             <br>
             <input type="reset" value="Clear">
