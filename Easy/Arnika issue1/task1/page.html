@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page</title>
+    <style>
+        * {
+            
+            box-sizing: border-box;
+            font-family: cursive;
+            font-size: large;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e2d0f1;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: rgb(190, 152, 252);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(39, 5, 53, 0.5);
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tab-links {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .tab {
+    
+            cursor: pointer;
+            font-weight: normal ;
+            border-bottom: 2px solid transparent;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        .tab:hover {
+            text-decoration: underline;
+        }
+        .form-container {
+            display: none;
+            font-size: x-large;
+        }
+        #login:target, #signup:target {
+            display: block;
+        }
+        
+        :target ~ .tab-links {
+            display: none;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #5e23aa;
+            color: white;
+            border: 2px  blueviolet;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 10px 10px 10px rgba(39, 5, 53, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab-links">
+                <a href="#login" class="tab">Login</a>
+                <a href="#signup" class="tab">Signup</a>
+            </div>
+            <div id="login" class="form-container">
+                <form action="secondpage.html">
+                <h1>Login</h1>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit"> Submit Login</button>
+            </form>
+            </div>
+            <div id="signup" class="form-container">
+                <form action="#login">
+                <h1>Signup</h1>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Confirm Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

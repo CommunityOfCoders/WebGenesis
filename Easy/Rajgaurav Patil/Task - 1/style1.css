@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+    color : rgb(7, 69, 22);
+}
+
+#new{
+    box-sizing: border-box;
+    width: 50%;
+    border-radius: 5%;
+    background-color : #FBFBF9;
+    padding: 20px;
+    word-spacing: 3px;
+    box-shadow: 4px 4px 4px 4px #ccc;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 10px 10px;
+}
+input:hover{
+    border: 1px solid #000;
+}
+button{
+    background-color: rgb(7, 69, 22);
+    color: #ccc;
+    padding: 12px 90px 12px 90px;
+    border-color: #ccc;
+}
+button:hover{
+    background-color: #ccc;
+    color: rgb(7, 69, 22);
+    border-color: rgb(7, 69, 22);
+}
