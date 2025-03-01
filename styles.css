@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -116,3 +117,45 @@ body {
   }
 }
 
+=======
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cde4fb;
+    color: #333;
+}
+header {
+    background: #037bfc;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+section {
+    padding: 2rem;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+.skills li {
+    background: #84bffe;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+.contact a {
+    display: inline-block;
+    margin: 0 1rem;
+    color: #037bfc;
+    text-decoration: none;
+}
+>>>>>>> 78aa9e48ab4e8a1b7f969e95b93821c8f16f56e0
