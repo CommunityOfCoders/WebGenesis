@@ -1,0 +1,87 @@
+*{
+    color:azure;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('image2.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Bebas Neue';
+}
+.mid{
+    display: block;
+    text-align: center;
+    margin: 12px 10px;
+    background-color: black;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    font-size: 20px;
+    padding: 15px 25px;
+    display: inline-block;
+    position: relative;
+}
+.navbar li a{
+    text-decoration: none;
+}
+.navbar :active, .navbar li a:hover{
+    color: brown;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.submenu1{
+    display: none;
+}
+.navbar li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background-color: rgb(168, 167, 167);
+    margin-top: 20px;
+    margin-left: -30px;
+}
+.navbar li:hover .submenu1 ul {
+    display: block;
+    margin:10px;
+}
+.navbar li:hover .submenu1 ul li{
+    width:100px;
+    padding: 5px;
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    border-bottom: 1px dotted white;
+    background: transparent;
+}
+.left{
+    position: absolute;
+    top: 28px;
+    left: 44px;
+    display: inline-block;
+}
+.left div{
+    font-size: 20px;
+}
+.right{
+    position: absolute;
+    top: 28px;
+    right: 44px;
+    display: inline-block;
+}
+.btn{
+    font-family: 'Bebas Neue';;
+    margin: -4px 14px;
+    background-color: rgb(168, 167, 167);
+    color: whitesmoke;
+    padding: 3px 4px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn:active, .btn:focus{
+    color:brown;
+}
+

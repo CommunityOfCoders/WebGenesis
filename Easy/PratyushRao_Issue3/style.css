@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+body{
+    font-family: "Nunito Sans", serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #292828;
+    color: white;
+    transition: left 0.8s cubic-bezier(.34,.6,.41,.91);
+    padding-top: 60px;
+    z-index: 10;
+}
+
+.sidebar a {
+    display:grid;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar a:hover {
+    background:rgb(75, 75, 75);
+}
+
+.submenu {
+    display: none;
+    background: #444;
+}
+
+.submenu a {
+    padding-left: 30px;
+}
+
+.menu-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    background: #292828;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    z-index: 11;
+}
+
+.cls-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.outside{
+    position: absolute;
+    left: 300px;
+    top:0;
+    background-color: #ffffff00;
+    width: 10vw;
+    height: 100vh;
+}
+
+.sidebar.active {
+    left: 0;
+
+
+}

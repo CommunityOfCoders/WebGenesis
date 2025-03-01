@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <script src="https://kit.fontawesome.com/83d2f06b40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .login-card{
+            border-radius: 8px;
+            border-style: none;
+            border-width: 2px;
+            margin: auto;
+            background-color: #fff;
+            width: 360px;
+            padding: 5px;
+            height: 400px;
+
+        }
+
+        .main-card{
+            background-color:lightyellow;
+            height: 100vh;
+            margin: 0px;
+        }
+
+        #pass-new{
+            margin-right: 120px;
+            margin-bottom: -1px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #pass-confirm{
+            margin-right: 60px;
+            margin-bottom: -2px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h1{
+            font-family: "Times New Roman", Georgia, Garamond, serif;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main-card d-flex flex-column justify-content-center ">
+        <div class="login-card text-center ">
+    <br>
+            <h1>Reset Password</h1>
+    <br>
+    <label>
+        <p id="pass-new">password</p>
+        <input type="password" placeholder="new password">
+        <br><br>
+        <p id="pass-confirm">Confirm Password</p>
+        <input type="password" placeholder="type again">
+    </label>
+    <br><br><br>
+    <button class="btn btn-outline-dark"><a href="login-page.html">Back</a></button>
+    <button class="btn btn-warning">Reset Password</button>
+        </div>
+    </div>
+
+</body>
+</html>
