@@ -1,0 +1,80 @@
+body{
+    background: url(background1.png);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.heading{
+    font-family: cursive;
+    font-size: 24 px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    display: block;
+    padding: 5px 35px;
+}
+
+.navlinks{
+    display: flex;
+    list-style: none;
+}
+
+.navlinks li{
+    position: relative;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.navlinks a:hover{
+    color: grey;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: beige;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-menu li{
+    height: auto;
+    width: auto;
+}
+
+.dropdown-menu a:hover{
+    background-color: rgb(235, 197, 127);
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.main-body h2{
+    display: inline-block;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.main-body h2::first-letter{
+    font-size: 1.5em;
+}
+
+.main-body p{
+    display: inline-block;
+    align-items: center;
+    padding: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+}
