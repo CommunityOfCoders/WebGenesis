@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/background.jpeg');
+  background-size: 100% auto; 
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; 
+  min-height: 400vh; 
+  height: auto;
+
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #eee;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.brandname {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+}
+
+.links a:hover {
+  background-color: #999999;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ddd;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-sub {
+  position: relative;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-sub .sub-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #ccc;
+  min-width: 150px;
+}
+
+.dropdown-sub:hover .sub-dropdown-content {
+  display: block;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.authentication button {
+  padding: 8px 15px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 0cap;
+  background: none;
+  cursor: pointer;
+}
+
+.authentication button:hover {
+  background-color: #999999;;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
