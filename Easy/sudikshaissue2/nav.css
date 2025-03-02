@@ -1,0 +1,98 @@
+body{
+    margin:0; 
+    font-family: 'Lucida Console', Monaco, monospace;
+    background-color: #FFFDD0;
+}
+
+header{
+    height:100; 
+    display:flex; 
+    align-items: center;
+    background-color: white;
+}
+
+.brandname{
+    font-family:Helvetica; 
+    font-weight: bold; 
+    font-size:0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    background-color:#14579e;
+    height:50px;
+    font-size: 20px;
+    color:white;
+}
+
+.login .signup{
+    padding:15px;
+}
+
+
+.btn{
+    border-radius: 25px;
+    background-color: #14579e;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #10365f;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color:white;
+}
+
+.criteria:hover{
+    cursor: pointer;
+}
+.criteriaContent{
+    display: none;
+    background-color:#14579e;
+    position: absolute;
+    box-shadow: 2px 2px 5px black;
+}
+
+.criteria:hover .criteriaContent{
+    display: block;
+}
+
+.criteriaContent a:hover{
+    background-color: #10365f;
+}
+
+.service:hover{
+    cursor: pointer;
+}
+.serviceContent{
+    display: none;
+    background-color:#14579e;
+    position: absolute;
+    box-shadow: 2px 2px 5px black;
+}
+
+.service:hover .serviceContent{
+    display: block;
+}
+
+.serviceContent a:hover{
+    background-color: #10365f;
+}
+
+
+
+.new a:hover{
+    text-decoration: underline;
+}
+
+.service a:hover{
+    text-decoration: underline;
+}
