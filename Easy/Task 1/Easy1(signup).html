@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type=text] {
+                background-color: white;
+                height: 40px;
+                width: 200px;
+                text-align: center;
+                border-radius: 30px;
+                border: 3px solid darkblue;
+                font-size: large;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+            input[type=password]{
+                background-color: white;
+                height: 40px;
+                width: 200px;
+                text-align: center;
+                border-radius: 30px;
+                border: 3px solid darkblue;
+                font-size: large;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            label{
+                color: white;
+                font-size: 30px;
+            }
+            form {
+                text-align: center;
+                margin-top: 5%;
+                margin-left: 32%;
+                width: 30%;
+                height: 50%;
+                background-color: rgba(38, 19, 121,0.2);
+                border-radius: 25px;
+                border: 2px solid white;
+                padding: 50px;
+                backdrop-filter: blur(3px);
+            }
+            input[type=reset]{
+                color: white;
+                background-color: skyblue;
+                width: 75px;
+                height: 40px;
+                font-size: large;
+                border-radius: 80px;
+                border: 2px solid darkblue;
+            }
+            input[type=submit]{
+                color: white;
+                background-color: skyblue;
+                width: 75px;
+                height: 40px;
+                font-size: large;
+                border-radius: 80px;
+                border: 2px solid darkblue;
+            }
+            h1{
+                text-align: center;
+                color: white;
+            }
+            body{
+                background-image: url("bg\ image.jpeg");
+                background-repeat: no-repeat;
+            }
+            a{
+                color: white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+        <title>
+            Signup
+        </title>
+    </head>
+    <body>
+        <form>
+            <h1>Signup</h1>
+            <input type="text" id="fname" placeholder="First Name" maxlength="12">
+            <br>
+            <br>
+            <input type="text" id="lname" placeholder="Last Name" maxlength="12">
+            <br>
+            <br>
+            <input type="text" id="uname" placeholder="Set Username" maxlength="12">
+            <br>
+            <br>
+            <input type="password" id="password" placeholder="Set Password" maxlength="12"> 
+            <br>
+            <br>
+            <input type="reset" value="Clear">
+            <input type="submit" value="Signup">
+            <br>
+            <br>
+            <a href="Easy1(login).html">Already have an account?Click here to login.</a>
+        </form>
+    </body>
+</html>
