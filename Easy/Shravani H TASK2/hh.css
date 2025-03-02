@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar {
+    background-color: #0b0804;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: darkgrey;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.logo p {
+    color: darkgrey;
+    font-size: 24px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: rgba(242, 233, 233, 0.9);
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #3f3f59;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    min-width: 150px;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    color: white;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: grey;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-container input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-btn {
+    background-color: grey;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    position: relative;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 5px;
+    background-color: rgb(195, 186, 186);
+    border-radius: 5px;
+}
+
+/* Dropdown Menu for Hamburger */
+.hamburger-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 120px;
+    z-index: 1000;
+}
+
+.hamburger-menu .dropdown-content a {
+    padding: 10px;
+    color: white;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hamburger-menu .dropdown-content a:hover {
+    background-color: grey;
+}
+
+/* Show dropdown when hovering over the hamburger */
+.hamburger-menu:hover .dropdown-content {
+    display: block;
+}
+
+.background-section {
+    margin-top: 80px; /* Push content below navbar */
+    background-image: url('https://wallpaperaccess.com/full/1338415.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+.background-section .content {
+    padding: 20px;
+}
+
+.background-section p {
+    font-size: 20px;
+}
+
+@media (max-width: 868px) {
+    .nav-paragraph {
+        font-size: 14px;
+        color: aqua;
+        font-family: cursive;
+        padding: 15px 5px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .search-container {
+        display: none;
+    }
+}
