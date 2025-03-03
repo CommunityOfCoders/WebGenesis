@@ -1,0 +1,52 @@
+body{
+    margin:0%;
+    padding:0%;
+    background-image:url(https://t3.ftcdn.net/jpg/02/92/90/56/360_F_292905667_yFUJNJPngYeRNlrRL4hApHWxuYyRY4kN.jpg) ;
+    background-size:110%;
+    
+}
+h1{
+    margin-left: 70%;
+    margin-top: 10%;
+    font-weight: bolder ;
+}
+h1:hover{
+    background-color: rgba(104, 163, 215, 0.457);
+    cursor: pointer;
+    display: inline-block;
+    
+    
+    text-shadow: 10px;
+}
+h3{
+    margin-left: 70%;
+    font-weight: bolder ;
+    
+
+}
+input{
+    margin-left: 70%;
+    font-weight: bolder ;
+    text-align: center;
+    align-items: justify;
+}
+button{
+    margin-left: 74%;
+    cursor: pointer;
+    display: inline-block;
+}
+a{
+    margin-left: 71%;
+    padding: 0%;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(220, 220, 244, 0.352);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: rgba(0, 0, 139, 0.338);
+}

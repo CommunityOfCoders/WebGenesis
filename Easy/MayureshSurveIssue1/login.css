@@ -1,0 +1,68 @@
+body {
+
+background-image: url(IndexBGImage.jpeg) ;
+background-position: right center;
+margin: 0 ;
+font-family: "Yatra One";
+
+}
+
+header {
+    text-align: center;
+    color: rgb(155, 46, 16);
+    background-color: rgb(201, 172, 129);
+    outline : 9px solid rgb(155, 46, 16);
+}
+
+.Login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 45vh;
+  color: rgb(155, 46, 16);
+
+  form {
+    background-color: rgb(244, 213, 176);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    border: 3px solid rgb(155, 46, 16) ;
+  }
+
+  button {
+    background-color: rgb(201, 172, 129);
+    color: rgb(155, 46, 16);
+    border-radius: 1em;
+    border: none;
+    outline : 3px solid rgb(155, 46, 16);
+    font-family: "Yatra One";
+  }
+
+  p {
+    margin-top: 1em;
+    background-color:  rgb(201, 173, 130);
+    border-radius: 1em;
+    outline : 3px solid rgb(155, 46, 16);
+    padding: 5px;
+    color: rgb(155, 46, 16);
+    a{
+    color: blueviolet;
+    text-decoration: none;
+    }
+  }
+
+  .ForgotP{
+    text-align: center;
+  }
+}
+
+.Text{
+   margin-top: 5em;
+   background-color: rgb(244, 213, 176) ;
+   padding-left: 2.85em;
+   padding-right: 2.85em;
+   outline: 3px solid rgb(155, 46, 16) ;
+
+}

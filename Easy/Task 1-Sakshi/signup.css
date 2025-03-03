@@ -1,0 +1,159 @@
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.wrap {
+    background: linear-gradient(45deg, #FFECD2, #FCB69F);
+    padding: 20px;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 3px 3px 20px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.login {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.email,
+.psw {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    height: 2em;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.op {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.Remember input {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.Remember {
+    justify-self: center;
+}
+
+button {
+    border-radius: 20px;
+    width: 10rem;
+    background: radial-gradient(rgb(255, 152, 203), rgb(246, 4, 181), rgb(190, 3, 140));
+    height: 3em;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 1em;
+}
+
+button:hover {
+    box-shadow: 3px 3px 6px rgba(0.5, 0.5, 0.5, 0.5);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.git img,
+.google img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.git img:hover,
+.google img:hover {
+
+    box-shadow: 3px 3px 6px rgba(0.5, 0.5, 0.5, 0.5);
+
+}
+
+.foot {
+    margin-top: 1rem;
+    font-size: 0.9em;
+}
+@media (max-width: 480px)  {
+    .wrap {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .op {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Remember {
+        display: flex;
+        align-items: center;
+    }
+
+    .Remember input {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .social-icons img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .foot {
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mythoveda | Home</title>
+        <meta name="description" content="Mythoveda">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/jpeg" href="Swasticon.jpeg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header>
+      <h1>|| Welcome To Mythoveda ||</h1>
+      <h2>An Enclyopedia of Hindu Myths & History</h2>
+     </header>
+     <nav class="Home">
+        <h2>Home</h2>
+        <ul class="Links">
+                       <img class="menuclose" src="menuclose.svg">
+                      <li class ="drop">
+                        <a href="#">Grantha</a>
+                        <ul class="dropmenu">
+                            <li><a href="vedas.html">Vedas</a></li>
+                            <li><a href="#">Upanishads</a></li>
+                            <li><a href="#">Purānas</a></li>
+                        </ul>
+                    </li>
+                      <li class ="drop">
+                        <a href="#">Sāhitya</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">Kathā</a></li>
+                            <li><a href="#">Kāvya</a></li>
+                            <li><a href="#">Folklore</a></li>
+                        </ul>
+                    </li>
+                    <li class ="drop">
+                        <a href="#">Itihāsa</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">Mythology</a></li>
+                            <li><a href="#">Ancient</a></li>
+                            <li><a href="#">Medieval</a></li>
+                        </ul>
+                    </li>
+                 <li class="drop">
+                        <a href="#">Account</a>
+                        <ul class="dropmenu">
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Sign-Up</a></li>
+                            <li><a href="signup.html">Contribute</a></li>
+                        </ul>
+                            </li>
+                </ul>
+                <img src="menuopen.svg" class="menuopen">
+        </nav>
+        <script>
+
+            const menu = document.querySelector('.Links');
+            const open = document.querySelector('.menuopen');
+            const close = document.querySelector('.menuclose');
+
+            open.addEventListener('click', () => {
+                menu.classList.add('open')
+            })
+
+            close.addEventListener('click', () => {
+                menu.classList.remove('open')
+            })
+
+            document.body.style.overflow = "visible";
+            document.documentElement.style.overflow = "visible";
+            document.body.style.overflowX = "hidden";
+
+            
+        </script>
+
+    </body>
+</html>
