@@ -1,0 +1,72 @@
+body{
+    text-align: center;
+}
+
+header{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 4em;
+    transform: translate(-460px,100px);
+}
+h1{
+    text-decoration: none;
+    text-align: left;
+    font-size: 2em;
+    font-style: italic;
+    transform: translate(80px,100px);
+    font-weight: lighter;
+}
+
+.container{
+    text-decoration: none;
+    font-style: italic;
+    text-align: left;
+    font-weight: lighter;
+    font-weight: bold;
+    transform: translate(150px,125px);
+    font-size: 1.3em;
+}
+
+a.primary-eta{
+    background-color:  rgb(15, 134, 17);
+    padding: 1em;
+    width: 35%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .9em;
+    color: white;
+    border-radius: .5em;
+    transform: translate(90px,150px);
+}
+h3{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1em;
+    text-align: left;
+    color: black;
+    transform: translate(-150px,-100px);
+}
+
+h2{
+    text-decoration: none;
+    text-align: left;
+    transform: translate(180px,160px);
+    font-size: 1.1em;
+}
+
+
+.plant1{
+    
+    display: inline-block;
+    transform: translate(450px,-490px);
+}
+
+a.sign-up{
+    
+    
+    font-size: 1.1em;
+    display: inline-block;
+    transform: translate(30px,-905px);
+}
