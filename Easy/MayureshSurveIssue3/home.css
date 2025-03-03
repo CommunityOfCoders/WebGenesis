@@ -1,0 +1,123 @@
+body {
+
+    background-image: url(IndexBGImage.jpeg);
+    background-position: right center;
+    margin: 0 ;
+    font-family: "Yatra One";
+    
+    }
+ 
+    header{
+        text-align: center;
+        color: rgb(155, 46, 16);
+        background-color: rgb(201, 172, 129);
+        outline : 9px solid rgb(155, 46, 16);
+    }
+    
+    .Home{
+      background-color:rgb(244, 213, 176);
+      outline: 3px solid rgb(155, 46, 16);
+      margin: 2em 0em 2em 0em;
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-direction:row ;
+      justify-content: space-between;
+      color: rgb(155, 46, 16);
+    
+    }
+
+    .menuclose, .menuopen{
+      height:auto;
+      max-height: 40px;
+      margin-top: 0.5em;
+      width: 40px;
+      display:none;
+    }
+
+    .Home h2, a{
+      margin : 0.5em;
+      color: rgb(155, 46, 16);
+    }
+    
+    .Home h2{
+         margin-left: 2em; 
+    }
+
+    a{
+      margin : 0.5em;
+      color: rgb(155, 46, 16);
+      text-decoration: none;
+      &:hover{
+        color:blueviolet ;
+      }
+    }
+     
+    .Links{
+      margin-right: 3em;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      transform: translateY(10%);
+      text-decoration: none;
+      padding-right: 3em;
+    }
+
+    .Links li{
+      position: relative;
+    }
+  
+    .dropmenu{
+      position: absolute;
+      align-items: center;
+      padding: 0.5em;
+      top: 100%;
+      left: 0;
+      width: 105px;
+      list-style: none;
+      background-color: rgb(244, 213, 176);
+      outline: 3px solid rgb(155, 46, 16);
+      z-index: 1000;
+      display: none;
+    }
+
+    .drop:hover .dropmenu{
+      display: block;
+    }
+
+  @media(max-width: 768px) {
+  
+    .Links{
+      display: flex;
+      justify-content:flex-start;
+      padding: 3em;
+      gap: 3em;
+      margin-right: 0;
+      flex-direction: column;
+      background-color: rgb(244, 213, 176);
+      border: 3px solid rgb(155, 46, 16);
+      border-top: 0;
+      position: absolute;
+      top: -1em;
+      right: 0;
+      min-height: 175vh;
+      z-index: 500;
+      transform:translate(100%);
+      transition:transform 0.5s ease-in-out;
+    }
+
+    .dropmenu{
+      top: 0;
+      transform:translateX(-100%);
+    }
+
+    .menuclose, .menuopen{
+      display: block;
+      margin-right: 2em;
+    }
+
+    .open{
+      transform:translate(0%);
+    }
+  
+  }

@@ -1,0 +1,104 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center top 20%;;
+    background-size: 60vw;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 70, 50, 0.9);
+    color: white;
+}
+
+.NAME {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.596);
+    border-radius: 5px;
+}
+
+/* Dropdown menu */
+.dropdown-menu,
+.sub-dropdown-menu {
+    display: none;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.dropdown-menu{
+    background-color: rgb(0, 47, 255);
+}
+.sub-dropdown-menu
+{
+    background-color: rgb(252, 29, 0);
+}
+.dropdown-menu li {
+    padding: 8px;
+}
+
+.dropdown-menu a {
+    font-size: small;
+    color: rgb(0, 0, 0);
+    
+}
+
+.dropdown:hover .dropdown-menu,
+.sub-dropdown:hover .sub-dropdown-menu {
+    display: block;
+}
+
+/* Sub-dropdown menu */
+.sub-dropdown-menu {
+    top: 0;
+    left: 100%;
+    text-align: center;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login, .signup {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.signup {
+    background: white;
+    color: black;
+}

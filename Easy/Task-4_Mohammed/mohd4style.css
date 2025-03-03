@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+::placeholder{
+  color: rgb(153, 149, 149);
+  font-size: large;
+  position: absolute;
+  bottom: 1px;
+}
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+.login{
+  position: absolute;
+  right: 110px;
+  top:12px;
+  border-radius: 19px;
+  width:85px;
+  height: 40px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.login button{
+  color:black;
+  justify-content: center;
+  margin-top: 10%;
+  background-color: white;
+  border: 0px none;
+  font-size: 17px;
+}
+.login:hover{
+  cursor: pointer;
+}
+.login button:hover{
+  cursor: pointer;
+}
+.signup{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  border: 2px solid #4a4b50;
+  border-radius: 19px;
+  width:85px;
+  height: 40px;
+  text-align: center;
+  background-color: #212121;
+}
+.signup button{
+  color:rgb(255, 255, 255);
+  justify-content: center;
+  margin-top: 10%;
+  background-color: #212121;
+  border: 0px none;
+  font-size: 17px;
+}
+.signup:hover{
+  cursor: pointer;
+  background-color: rgb(103, 103, 103);
+}
+.signup button:hover{
+  cursor: pointer;
+  background-color: rgb(103, 103, 103);
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: rgb(48, 48, 48);
+  padding: 12px;
+  border-radius: 25px;
+  width:850px;
+  height:12%;
+}
+.ph{
+  position: relative;
+  bottom: 25px;
+  left: 5px;
+}
+.voice{
+  position: absolute;
+  right: 700px;
+  left:1090px;
+  top:380px;
+  border: 1px solid #4a4b50;
+  border-radius: 19px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.voicebutton{
+  color:black;
+  position: absolute;
+  top:12px;
+  left: 45px;
+  font-size: 15px;
+}
+.voice img{
+  position: absolute;
+  left:9%;
+  top:15%;
+  width:30px;
+}
+.input-box input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+.input-box button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+.buttons button {
+  background-color: #212121;
+  border: 1px solid #4a4b50;
+  color: rgb(185, 183, 183);
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  height: 45px;
+  width: 160px;
+}
+.buttons button:hover {
+  background-color: rgb(103, 103, 103);
+  color: white;
+}
+.footer{
+  position: absolute;
+  bottom: 6px;
+}
+.newchat button{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #212121;
+  box-shadow: none;
+  border: 0px none;
+}
+.newchat button:hover{
+  background-color: rgb(103, 103, 103);
+  border: 1px solid #4a4b50;
+  border-radius: 8px;
+}
+.newchat img{
+  width: 40px;
+}
+.chatgpt{
+  position: absolute;
+  top: 20px;
+  left:70px;
+  border: 0px none;;
+  border-radius: 50px;
+
+}
+.chatgpt button{
+  background-color: #212121;
+  color: #b4b4b4;
+  box-shadow: none;
+  border: 0px none;
+  font-size: larger;
+  font-weight: bold;
+}
+.chatgpt button:hover{
+  background-color: rgb(103, 103, 103);
+  border: 1px solid #4a4b50;
+  border-radius: 20px;
+  height: 40px;
+  width: 120px;
+}
+.attach{
+  border: 1px solid #4a4b50;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 310px;
+  padding: 5px;
+}
+.attach:hover{
+  cursor: pointer;
+  background-color: rgb(103, 103, 103);
+}
+.search{
+  border: 1px solid #4a4b50;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 310px;
+  left:440px;
+  padding: 3px;
+}
+.search:hover{
+  cursor: pointer;
+  background-color: rgb(103, 103, 103);
+}
+.reason{
+  border: 1px solid #4a4b50;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 310px;
+  left:555px;
+  padding: 3px;
+}
+.reason:hover{
+  cursor: pointer;
+  background-color: rgb(103, 103, 103);
+}
