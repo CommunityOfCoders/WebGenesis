@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #1A1A1D;
+    text-align: center;
+}
+#name{
+    font-family: "Headland One", serif;
+    font-size: 6vh;
+    color: #A64D79;
+}
+.container{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    margin: 5vh;
+}
+#ip{
+    font-size: 5vh;
+    height: 11vh;
+    width: 50vw;
+
+}
+/* #cancel{
+    position: relative;
+    left: 1vh;
+    width: 26vh;
+} */
+/* .btn{
+    margin-bottom: 2vh;
+    height: 20vh;
+    width: 20vh;
+    background-color: #3B1C32;
+    border-radius: 2px;
+    color: #6A1E55;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 10vh;
+
+} */
+ /* .btn{
+    margin: 1px;
+ } */
+.btncr{
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: 14vh 14vh 14vh ;
+    position: relative;
+    right: 31vh;
+}
+button{
+    
+   
+    height: 13vh;
+    width: 13vh;
+    background-color:  #511D42;
+    border-radius: 5px;
+    color: #9d327f;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 5vh;
+
+}
+.res{
+   width: 6vw;
+}
+#resbtn{
+     height: 13vh;
+     width: 28vh;
+}
+.operations{
+    position: relative;
+    bottom: 51vh;
+    left: 21vh;
+    display: grid;
+    grid-template-columns: 14vh 14vh 14vh 14vh;
+
+}
