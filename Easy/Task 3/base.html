@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Weather
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="sidebar">
+                <label for="click">Countries</label>
+                <input type="checkbox" id="click" class="check">
+            <div class="bg">
+                <div class="country">
+                    <button>India:</button>
+                    <div class="city">
+                        <a href="https://www.google.com/search?q=mumbai+weather&oq=mumbai+we&gs_lcrp=EgZjaHJvbWUqBwgBEAAYjwIyBggAEEUYOTIHCAEQABiPAtIBCDMwMTRqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8">Mumbai</a>
+                        <a href="https://www.google.com/search?q=delhi+weather&sca_esv=1f35e13951f50dd1&ei=u4zFZ-fAIebb1e8PwfX7-AU&ved=0ahUKEwiniqP14e2LAxXmbfUHHcH6Hl8Q4dUDCBA&uact=5&oq=delhi+weather&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWRlbGhpIHdlYXRoZXIyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMggQABiABBixAzIFEAAYgAQyCBAAGIAEGLEDMgUQABiABDIEEAAYAzIFEAAYgAQyBRAAGIAEMggQABiABBixA0ihGFDQAljBEnABeAGQAQCYAZ8BoAGdCaoBAzAuObgBA8gBAPgBAZgCBaACtATCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAAGIAEGLEDGArCAgcQABiABBgKwgILEAAYgAQYkQIYigXCAgoQABiABBhDGIoFwgIGEAAYBxgewgIGEAAYAxgKmAMAiAYBkAYKkgcDMS40oAfQOw&sclient=gws-wiz-serp">Delhi</a>
+                        <a href="https://www.google.com/search?q=bangalore+weather&sca_esv=1f35e13951f50dd1&ei=No3FZ5PTJoOUvr0PgqOSqAI&oq=ban+weather&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2JhbiB3ZWF0aGVyKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSJwlUPAQWOkccAF4AZABAZgBoQOgAdUMqgEJMC42LjAuMS4xuAEDyAEA-AEBmAIEoAKoBcICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFwgIOEAAYgAQYkQIYsQMYigXCAgoQABiABBhDGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICDRAAGIAEGLEDGEMYigWYAwCIBgGQBgqSBwcxLjIuMC4xoAe9NQ&sclient=gws-wiz-serp">Bangalore</a>
+                    </div>
+                </div>
+                <div class="country">
+                    <button>Australia:</button>
+                    <div class="city">
+                        <a href="https://www.google.com/search?q=sydney+weather&sca_esv=1f35e13951f50dd1&ei=So3FZ5P6PPbLseMP56GPwAg&oq=sydweather&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnN5ZHdlYXRoZXIqAggAMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5IjxZQ6wpYwwxwAXgBkAEBmAHtAqAB0wWqAQcwLjEuMS4xuAEDyAEA-AEBmAICoAKeAcICChAAGLADGNYEGEfCAg0QABiABBiwAxhDGIoFmAMAiAYBkAYKkgcDMS4xoAfHDw&sclient=gws-wiz-serp">Sydney</a>
+                        <a href="https://www.google.com/search?q=melbourne+weather&sca_esv=1f35e13951f50dd1&ei=ZY3FZ__zMOCaseMPnKiFqA0&oq=melb+weather&gs_lp=Egxnd3Mtd2l6LXNlcnAiDG1lbGIgd2VhdGhlcioCCAAyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHkj3D1AAWN4HcAB4AZABAJgBhQSgAecIqgELMC4yLjAuMS4wLjG4AQPIAQD4AQGYAgOgAvcEmAMAkgcHMC4yLjAuMaAHnxg&sclient=gws-wiz-serp">Melbourne</a>
+                        <a href="https://www.google.com/search?q=perth+weather&sca_esv=1f35e13951f50dd1&ei=fY3FZ-KJAqSaseMPno_Y2Qc&ved=0ahUKEwiivMTR4u2LAxUkTWwGHZ4HNnsQ4dUDCBA&uact=5&oq=perth+weather&gs_lp=Egxnd3Mtd2l6LXNlcnAiDXBlcnRoIHdlYXRoZXIyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yChAAGIAEGEMYigUyBhAAGAcYHjIGEAAYBxgeMgoQABiABBhDGIoFSLQVUABYwhJwA3gBkAEAmAGIA6AB-giqAQcwLjQuMS4xuAEDyAEA-AEBmAIGoAKjA8ICChAAGIAEGLEDGA3CAgcQABiABBgNmAMAkgcDMy4zoAftIg&sclient=gws-wiz-serp">Perth</a>
+                    </div>
+                </div>
+                <div class="country">
+                    <button>USA:</button>
+                    <div class="city">
+                        <a href="https://www.google.com/search?q=new+york+weather&sca_esv=1f35e13951f50dd1&ei=jI3FZ9SLKefi1e8P6MaBqAQ&oq=new+weather&gs_lp=Egxnd3Mtd2l6LXNlcnAiC25ldyB3ZWF0aGVyKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yDhAAGIAEGJECGLEDGIoFMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5IugxQAFi8BnABeAGQAQCYAaYCoAH2BqoBBTAuMi4yuAEDyAEA-AEBmAIDoALTApgDAJIHAzEuMqAHkRU&sclient=gws-wiz-serp">New York</a>
+                        <a href="https://www.google.com/search?q=chicago+weather&sca_esv=85f960ec4af1a2a5&ei=nI3FZ_fvN5eTseMP4sre-AI&oq=ch+weather&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmNoIHdlYXRoZXIqAggAMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5InylQAFj8IHAAeAGQAQCYAb8BoAHuBKoBAzAuNLgBA8gBAPgBAZgCA6AC2APCAgoQABiABBhDGIoFwgIQEAAYgAQYsQMYQxiDARiKBcICDRAAGIAEGLEDGEMYigXCAgUQABiABJgDAJIHAzAuM6AHwxY&sclient=gws-wiz-serp">Chicago</a>
+                        <a href="https://www.google.com/search?q=los+angeles+weather&sca_esv=1f35e13951f50dd1&ei=q43FZ_fnOPeUseMP6L-62Ac&oq=los+weather&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2xvcyB3ZWF0aGVyKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSMMIUABY8wFwAHgBkAEAmAGZAaABpQOqAQMwLjO4AQPIAQD4AQGYAgGgAp8BmAMAkgcDMC4xoAeEEQ&sclient=gws-wiz-serp">Los Angeles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Weather</h1>
+    </body>
+</html>
