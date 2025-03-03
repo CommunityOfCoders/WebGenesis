@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-button">
+            <div class="btn"></div>
+            <button onclick="Login()">Login</button>
+            <button onclick="Signup()">SignUp</button>
+        </div>
+        <div id="Login" class="form-signup">
+            <input type="text" class="input-type" placeholder="User Id">
+            <input type="password" class="input-type" placeholder="Enter Password">
+            <span>
+                <input type="checkbox" class="check-box">
+                <span style="font-size: 13px;">Remember Password</span>
+            </span>
+            <div class="login-btn"></div>
+            <button>Log in</button>
+        </div>
+        <div id="Signup" class="form-signup" style="height: 250px">
+            <input type="text" class="input-type" placeholder="User Id">
+            <input type="email" class="input-type" placeholder="email-Id">
+            <input type="password" class="input-type" placeholder="Enter Password">
+            <span>
+                <input type="checkbox" class="check-box">
+                <span style="font-size: 13px; top: 170px;">I agree to the terms and Condition.</span>
+            </span>
+            <div class="login-btn"></div>
+            <button>Log in</button>
+        </div>
+    </div>
+    <script>
+        let x = document.getElementById("Login");
+        let y = document.getElementById("Signup");
+        let z = document.querySelector(".btn");
+      
+
+        function Signup() {
+            x.style.left = "-300px";
+            y.style.left = "-200px";
+            z.style.left = "85px"; 
+         
+
+        }
+
+        function Login() {
+            x.style.left = "-30px";
+            y.style.left = "300px";
+            z.style.left = "-5px"; 
+            
+        }
+    </script>
+</body>
+</html>
