@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign-up Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-box">
+        <h2>Login</h2>
+        <hr>
+        <form action="Confidential_Login.txt" method="POST">
+            <div class="input-group">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" placeholder="Username" minlength="6" maxlength="20" required>
+            </div>
+            <div class="input-group">
+                <label for="login-email">E-mail:</label>
+                <input type="email" id="login-email" name="email" placeholder="something@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" minlength="8" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <hr>
+        <p class="switch-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+</body>
+</html>
