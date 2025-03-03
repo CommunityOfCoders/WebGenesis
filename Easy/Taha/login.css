@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://img.freepik.com/free-vector/abstract-realistic-technology-particle-background-concept_23-2148433737.jpg?t=st=1740851062~exp=1740854662~hmac=c32b44e3146b49720687ef87d19768e63baed537428dc1fe229b461a12ac6ddd&w=1380') no-repeat center center/cover; /* Replace with your image */
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.4); /* Adjust opacity inside the container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 750px;
+    z-index: 1;
+}
+
+.login-section, .social-login-section {
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.login-section {
+    border-right: 1px solid #ccc;
+}
+
+input, button {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input {
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.google-btn {
+    background: #db4437;
+    color: white;
+}
+
+.facebook-btn {
+    background: #3b5998;
+    color: white;
+    align-items: center;
+}
+
+.twitter-btn {
+    background: #1da1f2;
+    color: white;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
