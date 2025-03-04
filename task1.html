@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.visionvault.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="First">
+    <div class="Second">
+        <div class="title">VisionVault</div>
+    </div>
+    <div class="form-container">
+        <div class="slider-controls">
+            <input type="radio" name="slide" id="login" checked />
+            <input type="radio" name="slide" id="signup" />
+            <label for="login" class="slide login">Sign In</label>
+            <label for="signup" class="slide signup">Sign Up</label>
+            <div class="slider-tab"></div>
+        </div>
+        <div class="form-section" id="loginForm">
+            <h1 class="title">Sign In</h1>
+            <form>
+                <label for="username">Enter Username:</label><br>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="login-password">Enter Password:</label><br>
+                <input type="password" id="login-password" name="password"><br><br>
+                <button type="submit">Submit</button><br><br>
+            </form>
+        </div>
+
+        <div class="form-section" id="signupForm">
+            <h1 class="title">Sign Up</h1>
+            <form>
+                <label for="name">Enter Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Enter Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="signup-password">Enter Password:</label><br>
+                <input type="password" id="signup-password" name="password"><br><br>
+                <button type="submit">Submit</button><br><br>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

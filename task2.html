@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>www.visionvault.com</title>
+<link rel="stylesheet" href="styles.css"> 
+<style>
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient(145deg, #ff9a9e, #fad0c4, #fad0c4);
+    color: #fffff0;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 2000;
+    background: linear-gradient(145deg, #ff9a9e, #fad0c4, #fad0c4);
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo-name {
+    color: #fffff0;
+    font-size: 2.5em;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-item {
+    position: relative;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #fffff0;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.nav-item a:hover {
+    background-color: #fad0c4;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ff7eb3;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.nav-item:hover .dropdown {
+    display: block;
+}
+.dropdown a {
+    display: block;
+    padding: 10px;
+    white-space: nowrap;
+}
+.content {
+    padding: 80px 20px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+    <div class="menu">
+        <div class="sidebar logo">
+            <span class="logo-name">VisionVault</span>
+        </div>
+        <div class="nav-links">
+            <div class="nav-item">
+                <a href="home.html">Home</a>
+                <div class="dropdown">
+                    <a href="#">Our Journey till now</a>
+                    <a href="#">Our Future Goals</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="about.html">About</a>
+                <div class="dropdown">
+                    <a href="#">Our Mission</a>
+                    <a href="#">Our Team</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="services.html">Services</a>
+                <div class="dropdown">
+                    <a href="#">Paintings</a>
+                    <a href="#">Jewelery</a>
+                    <a href="#">Books</a>
+                    <a href="#">Blog Writing</a>
+                    <a href="#">Artists in Residence</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="contact.html">Contact Us</a>
+                <div class="dropdown">
+                    <a href="#">Email</a>
+                    <a href="#">Phone</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <i><h1>Welcome to VisionVault</h1>
+    <h3>A place where your mind runs free, unbound and wild with creativity, alive with endless possibilities.</h3></i>
+</div>
+</body>
+</html>

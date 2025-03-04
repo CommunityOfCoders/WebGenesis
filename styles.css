@@ -1,0 +1,159 @@
+body 
+{
+    font-family: 'Parkavenue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+}
+.First 
+{
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.Second 
+{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.title 
+{
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.form-container 
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.slider-controls
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 30px;
+   
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slide {
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff758c;
+    transition: color 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.slider-tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+.form-section 
+{
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+input 
+{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+button {
+    padding: 12px;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Show the form based on selection */
+#login:checked ~ .form-section#loginForm {
+    display: block;
+}
+
+#signup:checked ~ .form-section#signupForm {
+    display: block;
+}
+
+/* Animate the slider tab */
+#signup:checked ~ .slider-tab {
+    transform: translateX(100%);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .First {
+        width: 95%;
+    }
+}
