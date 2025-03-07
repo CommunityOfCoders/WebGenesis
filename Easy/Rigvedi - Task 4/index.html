@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body><div class="wrap">
+    
+    <div class="header">
+        <a href="#" class="sidebar-open"><img src="sidebar.svg"></a>
+        <a href="#" class="new-chat"><img src="new_chat.svg"></a>
+        <a href="#" class="chatgpt">ChatGPT</a>
+        <button type="button" class="button b-prof">You</button>      
+    </div>
+
+    <div class="header-2">
+        <a href="#" class="menu-768"><img src="menu-768.svg"></a>
+        <a href="#" class="chatgpt">ChatGPT</a>
+        <a href="#" class="new-chat"><img src="new_chat.svg"></a>
+    </div>
+
+    <div class="main">
+        <div class="what-help">What can I help with?</div>
+        <div class="ask-box">
+            <label for="ask anything">
+                <input name="ask-any" placeholder="Ask anything"></label>
+                <div class="bottom">
+                    <button type="button" class="button b-plus">+</button>
+                    <a href="#" class="voice-note"><img src="voice_note.svg"></a>
+                </div>
+        </div>
+    </div>
+
+    <div class="footer">ChatGPT can make mistakes. Check important info.</div>
+
+    </div>
+
+    <div class="wrap-2">
+    <div class="side">
+        <div class="li1">
+            <a href="#" class="sidebar-close"><img src="sidebar.svg"></a>
+            <a href="#" class="search"><img src="search.svg"></a>
+            <a href="#" class="new-chat"><img src="new_chat.svg"></a>
+        </div>
+        
+        <div class="li2 h">
+            <a href="#" class="side-cg"><img src="side_cg.svg"></a>
+            <div class="side-txt">ChatGPT</div>
+        </div>
+        <div class="li3 h">
+            <a href="#" class="side-exp"><img src="side_explore.svg"></a>
+            <div class="side-txt">Explore GPTs</div>
+        </div>
+    </div>
+
+    <div class="plus-menu remove">
+        <ul>
+            <li class="h1">Connect to Google Drive</li>
+            <li class="h1">Connect to Microsoft OneDrive</li>
+            <li><div class="divider"></div></li>
+            <li class="h1"><img src="upload.svg">Upload from computer</li>
+        </ul>
+    </div>
+    
+    <div class="prof remove">
+        <ul>
+            <li class="h1"><img src="explore.svg">Explore GPTs</li>
+            <li class="h1"><img src="customize.svg">Customize ChatGPT</li>
+            <li class="h1"><img src="settings.svg">Settings</li>
+            <li><div class="divider"></div></li>
+            <li class="h1"><img src="windows.svg">Download the Windows app</li>
+            <li class="h1"><img src="upgrade.svg">Upgrade Plan</li>
+            <li class="h1"><img src="extension.svg">Get ChatGPT search extension</li>
+            <li><div class="divider"></div></li>
+            <li class="h1"><img src="logout.svg">Log out</li>
+        </ul>
+    </div>
+    </div>
+
+    <script>
+        const sideMenu = document.querySelector('.side');
+        const sideBarOpen = document.querySelector('.sidebar-open');
+        const sideBarClose = document.querySelector('.sidebar-close');
+        const menuMedia = document.querySelector('.menu-768');
+
+        const plus = document.querySelector('.b-plus');
+        const profileButton = document.querySelector('.b-prof');
+        const plusMenu = document.querySelector('.plus-menu');
+        const profileMenu = document.querySelector('.prof');
+
+        sideBarOpen.addEventListener('click', () => {
+            sideMenu.classList.add('side-open')
+        })
+        sideBarClose.addEventListener('click', () => {
+            sideMenu.classList.remove('side-open')
+        })
+        menuMedia.addEventListener('click', () => {
+            sideMenu.classList.add('side-open')
+        })
+
+        plus.addEventListener('click', () => {
+            plusMenu.classList.toggle('remove')
+        })
+        profileButton.addEventListener('click', () => {
+            profileMenu.classList.toggle('remove')
+        })
+        
+        document.addEventListener('click', (e) => { if(!plus.contains(e.target) && !plusMenu.contains(e.target)){
+            plusMenu.classList.add('remove')
+        }})
+        document.addEventListener('click', (e) => { if(!profileButton.contains(e.target) && !profileMenu.contains(e.target)) {
+            profileMenu.classList.add('remove')
+        }})
+        
+    </script>
+</body>
+</html>
