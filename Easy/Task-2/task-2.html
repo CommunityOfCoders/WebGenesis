@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Himalayas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            align-items: center;
+            height: 100vh;
+            background-image: url('himalayas.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+        }
+        
+        .container{
+            display: flex;
+            border: 2px solid black;
+            height: 70px;
+            background-color: rgb(113, 191, 113);
+        }
+        .item-1 {
+            margin: 20px;
+            margin-left: 70px;
+            font-weight: bold;
+            font-size: 21px;
+        }
+        .home {
+            margin-top: 20px;
+            margin-left: 290px;
+            color: #fff;
+            font-weight: bold; 
+            font-size: 18px; 
+        }
+        .about {
+            margin-top: 20px;
+            margin-left: 50px;
+            color: #fff;
+            font-weight: bold;  
+            font-size: 18px; 
+        }
+        .services {
+            margin-top: 20px;
+            margin-left: 50px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;   
+        }
+        .contact {
+            margin-top: 20px;
+            margin-left: 50px;
+            color: #fff;
+            font-weight: bold; 
+            font-size: 18px;   
+        }
+        .login {
+            margin-top: 15px;
+            margin-left: 150px;
+            color: blue;
+            font-weight: bold; 
+            font-size: 18px; 
+            height: 35px;
+            width: 120px;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: none;
+            border: 2px solid black;
+        }
+        .sign-up {
+            margin-top: 15px;
+            margin-left: 20px;
+            color: blue;
+            font-weight: bold; 
+            font-size: 18px; 
+            height: 35px;
+            width: 120px;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: none;
+            border: 2px solid black;
+            background: #fff;
+        }
+        .home:hover {
+            color: aqua;
+        }
+        .contact:hover {
+            color: aqua;
+        }
+        .about:hover {
+            color: aqua;
+        }
+        .services:hover {
+            color: aqua;
+        }
+        .login:hover {
+            color: antiquewhite;
+        }
+        .sign-up:hover {
+            color: antiquewhite;
+        }
+        .drop-down li {
+            list-style: none;
+            height: 100%;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .drop-down {
+            position: absolute;
+            padding: 0.5rem 0;
+            margin: 0.5rem -0.5rem;
+            background: antiquewhite;
+            color: black;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            font-size: 15px;
+            display: none;
+        }
+        .about:hover .drop-down {
+            display: block;
+        }
+        h1{
+            text-align: center;
+            margin-top: 150px;
+            color: rgb(11, 177, 243);
+            text-decoration:underline;
+        }
+        p {
+            text-align: center;
+            color:beige;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+            font-size: medium;
+        }
+        .drop1 li {
+            list-style: none;
+            height: 100%;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .drop1 {
+            position: absolute;
+            padding: 0.5rem 0;
+            margin: 0.5rem -0.5rem;
+            background: antiquewhite;
+            color: black;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            font-size: 15px;
+            display: none;
+            z-index: 1000;
+        }
+        .home:hover .drop-down-1{
+            display: block;
+        }
+        .drop-down-1 li{
+            list-style: none;
+            height: auto;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: white;
+        }
+        .drop-down-1 {
+            position: absolute;
+            padding: 0.5rem 0;
+            margin: 0.5rem -0.5rem;
+            background: antiquewhite;
+            color: black;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            font-size: 15px;
+            display: none;
+        }
+        .drop-down-1:hover .drop1 {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 200px;
+        }
+        a {
+            color: black;
+        }
+        a:hover {
+            color: orange;
+        }
+        .drop2 li {
+            list-style: none;
+            height: 100%;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .drop2 {
+            position: absolute;
+            padding: 0.5rem 0;
+            margin: 0.5rem -0.5rem;
+            background: antiquewhite;
+            color: black;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            font-size: 15px;
+            display: none;
+        }
+        .services:hover .drop2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    </div>
+    <div class="container">
+        <div class="item-1">The Himalayas</div>
+        <div class="home">Home <i class="fas fa-caret-down"></i>
+            <div class="drop-down-1">
+                <ul>
+                    <li><a href="#">Popular Destinations</a>
+                        <div class="drop1">
+                            <ul>
+                                <li><a href="https://g.co/kgs/8rYDkdA">Ladakh</a></li>
+                                <li><a href="https://g.co/kgs/LNGZAcx">Manali</a></li>
+                                <li><a href="https://g.co/kgs/H7wYVBq">Mussoorie</a></li>
+                                <li><a href="https://g.co/kgs/MrhAbEK">Rishikesh</a></li>
+                                <li><a href="https://g.co/kgs/9Y6KASG">Valley of Flowers</a></li>
+                                <li><a href="https://g.co/kgs/vZHXffR">Kedarnath</a></li>
+                                <li><a href="https://g.co/kgs/EGMmSds">Dharamshala</a></li>
+                                <li><a href="https://g.co/kgs/kwYhgR3">Badrinath</a></li>
+                                <li><a href="https://g.co/kgs/2HfPFga">Kathmandu</a></li>
+                                <li><a href="https://www.google.com/search?kgmid=%2Fm%2F0807bzx&hl=en-IN&q=Kasol&shndl=17&source=sh%2Fx%2Fkp%2Fosrp%2Fm5%2F1&kgs=65cac3ea6ed1cb17">Kasol</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="https://globeindia.in/10-reasons-to-travel-to-the-himalayas-one-in-a-life/#:~:text=Spiritual%20and%20Cultural%20Experience%3A,that%20have%20thrived%20for%20centuries.">Travel Inspiration</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">About
+            <div class="drop-down">
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/X1fEbvFhq82sQ2XM8">Location</a></li>
+                    <li><a href="https://education.nationalgeographic.org/resource/mount-everest/">Highest Peak</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Himalayan_states">Countries</a></li>
+                    <li><a href="https://www.pmfias.com/major-passes-india-himalayas-indian-sub-continent-khyber-pass-gomal-pass-bolan-pass-banihal-pass-shipki-la-nathu-la-jelep-la/">Passes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="services">Services
+            <div class="drop2">
+                <ul>
+                    <li><a href="#">Plan Your Trip</a></li>
+                    <li><a href="#">Travel Packages</a></li>
+                    <li><a href="#">Special Offers and Deals</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">Contact</div>
+        <form action="http://127.0.0.1:3000/video%2029/task-1.html">
+            <div>
+                <button type="submit" class="login">Login</button>
+            </div>
+        </form>
+        <form action="http://127.0.0.1:3000/video%2029/register.html">
+            <div>
+                <button type="submit" class="sign-up">Sign Up</button>
+            </div>
+        </form>
+    </div>
+        <div class="content">
+            <h1>Himalayas</h1>
+            <p>The Himalayas are the world's highest mountain range, stretching across Asia and forming a natural barrier along the northern border of India, encompassing several countries like Nepal, Bhutan, and China; with Mount Everest, the highest peak globally, situated within its range; considered young fold mountains, the Himalayas are divided into different parallel ranges including the Great Himalayas (Himadri), Lesser Himalayas (Himachal), and the Shiwaliks, with significant rivers like the Ganga and Indus originating from its glaciers;. 
+            </p>
+    </main>
+</body>
+</html>
