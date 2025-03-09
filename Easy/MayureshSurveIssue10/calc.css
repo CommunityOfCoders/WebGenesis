@@ -1,0 +1,52 @@
+*{
+    font-family: "Press Start 2P";
+}
+
+body{
+    background: url(retrobg.jpeg) no-repeat center center fixed;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    margin: 2em 0em;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 0.25em;
+}
+
+.display{
+    width: 69.5%;
+    height: 1.5em;
+    font-size: 2em;
+    text-align: right;
+    background: transparent;
+    color: white;
+}
+
+.back{
+    width: 3.25em;
+    height: 3.25em;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+    margin-bottom: 4em;
+    max-width: 70vw;
+    max-height: 70vh;
+    width: 75%;
+    height: 50%;
+}
+
+button{
+    font-size: 0.5em;
+    padding: 1em;
+    color: white;
+    background-color: rgb(127, 136, 117);
+}
