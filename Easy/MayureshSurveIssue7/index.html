@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lethal Company Registration</title>
+        <meta name="description" content="Lethal Company Form">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="LCCon.png">
+        <link rel="stylesheet" href="company.css">
+    </head>
+    <body>
+        <header>
+            <audio class="yipeee"><source src="yipeee.mp3"></audio>
+            <img onclick="yipeee()" class="gif" src="HoardingBug.gif">
+            <img class="title" src="LCTitle.jpeg">
+            <img onclick="yipeee()"  class="gif" src="HoardingBug.gif">
+        </header>
+         
+        <div class="progress">
+            <div class="pro"><img class="flash" src="incomfl.png"></div>
+            <div class="pro"><img class="flash" src="incomfl.png"></div>
+            <div class="pro"><img class="flash" src="incomfl.png"></div>
+            <div class="pro"><img class="flash" src="LCCon.png"></div>
+        </div>
+            
+        <div class="box">
+
+        <div class="formbox">
+            <div class="Text">
+              <h2>Registrant Details</h2>
+          </div>
+              <div class="form">
+                  <form>
+                      <input type="text" autocomplete="off" name="firstname" 
+                      placeholder="First Name">
+                      <input type="text" autocomplete="off" name="middlename"
+                      placeholder="Middle Name">
+                      <input type="text" autocomplete="off" name="lastname"
+                      placeholder="Last Name">
+                      <button onclick="nextform()" type="button">Next</button>
+                  </form>
+              </div>
+          </div>
+          
+          <div style="display: none;" class="formbox">
+            <div class="Text">
+              <h2>Registrant Mail</h2>
+          </div>
+              <div class="form">
+                  <form>
+                      <input type="email" autocomplete="off" name="email" 
+                      placeholder="Email">
+                      <input type="password" autocomplete="off" name="mailpassword"
+                      placeholder="Email Password">
+                      <input type="email" autocomplete="off" name="backupmail"
+                      placeholder="Backup Email">
+                      <button onclick="nextform()" type="button">Next</button>
+                      <button onclick="prevform()" type="button">Back</button>
+                  </form>
+              </div>
+          </div>
+
+          <div style="display: none;" class="formbox">
+            <div class="Text">
+              <h2>Registrant Address</h2>
+          </div>
+              <div class="form">
+                  <form>
+                      <input type="text" autocomplete="off" name="moon" 
+                      placeholder="Moon">
+                      <input type="text" autocomplete="off" name="nation"
+                      placeholder="Nation">
+                      <input type="text" autocomplete="off" name="city"
+                      placeholder="City">
+                      <button onclick="nextform()" type="button">Next</button>
+                      <button onclick="prevform()" type="button">Back</button>
+                  </form>
+              </div>
+          </div>
+
+          <div style="display: none;" class="formbox">
+            <div class="Text">
+              <h2>Registrant Confirmation</h2>
+          </div>
+              <div class="form">
+                  <form>
+                      <input type="text" autocomplete="off" name="username" 
+                      placeholder="Age">
+                      <input type="text" autocomplete="off" name="email"
+                      placeholder="Company ID">
+                      <input type="text" autocomplete="off" name="yesorno"
+                      placeholder="Do you love The Company? Yes/No">
+                      <a href="https://store.steampowered.com/app/1966720/Lethal_Company/"><button type="button">Aboard</button></a>
+                      <button onclick="prevform()" type="button">Back</button>
+                  </form>
+              </div>
+          </div>
+
+
+        </div>
+        
+        <script>
+            
+            function yipeee() {
+            let yip = document.querySelector('.yipeee');
+            yip.currentTime = 0;
+            yip.volume = 0.1;
+            yip.play();
+            }
+            
+            let forms = document.querySelectorAll('.formbox');
+            let currentIndex = 0;
+            let pros = document.querySelectorAll('.pro');
+
+            function nextform(){
+                  
+                let values = forms[currentIndex].querySelectorAll('input');
+                let profl = pros[currentIndex].querySelector('img');
+                let verify = true;
+
+                values.forEach(input => {
+
+                    if(!input.value){
+                        verify = false;
+                        input.classList.add('incom');
+                    }
+                    else{
+                        input.classList.remove('incom');
+                    }
+                });
+                
+                if(verify && currentIndex < forms.length - 1){
+                    forms[currentIndex].style.display = "none";
+                    profl.src = 'comfl.png';
+                    currentIndex++;
+                    forms[currentIndex].style.display = "flex";
+                }
+            }
+
+            function prevform() {
+                let values = forms[currentIndex].querySelectorAll('input');
+
+                if(currentIndex > 0){
+                    forms[currentIndex].style.display = "none";
+                    currentIndex--;
+                    forms[currentIndex].style.display = "flex";
+                }
+            }
+
+        </script>
+    </body>
+</html>

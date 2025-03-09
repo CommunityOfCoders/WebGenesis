@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: '3270';
+}
+
+@font-face {
+    font-family: '3270';
+    src: url(3270-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: url(lcbg.jpeg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 7.5em;
+    padding: 0.25em;
+    outline: 3px solid rgb(187, 18, 18);
+    
+}
+
+.title{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 7em;
+}
+
+.gif{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 7em;
+}
+
+.progress{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 5em;
+    height: 3em;
+    margin-left: 47.5%;
+    margin-top: 2em;
+}
+
+.pro img{
+    width: 5em;
+    height: 3em;
+    padding: 1em;
+    background-image:url(probar.png);
+    background-size: cover;
+    border-bottom: 3px dashed rgb(72, 43, 201);
+}
+
+.box{
+    width: 80vw;
+    height: 80vh;
+    margin-left: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbox, .form, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+    color: rgb(0, 255, 0);
+}
+
+.formbox{
+    background-image: url(formbg.jpeg);
+    background-size: cover;
+    width: 23.5em;
+    height:23.5em;
+    border: 2px solid rgb(145, 140, 105);
+    border-radius: 1em; 
+    margin-left: 2em;
+}
+
+
+input{
+    background: transparent;
+    font-size: 1em;
+    color: rgb(0, 255, 0);
+    width: 12.5em;
+    height: 2em;
+}
+
+input:focus{
+    border: none;
+}
+
+button{
+    margin-top: 0.8em;
+    background: transparent;
+    color: rgb(0, 255, 0);
+    width: 12em;
+    height: 2.5em;
+}
+
+.incom{
+    border: 2px solid rgb(147, 28, 28);
+}
+
+
+@media(max-width: 768px) {
+    
+    header{
+        justify-content: center;
+    }
+
+    progress{
+        width: 3em;
+        height: 1.8em;
+    }
+
+    .pro img{
+        width: 4em;
+        height: 2.5em;
+    }
+
+    .box{
+        margin-left: 3em;
+    }
+}
