@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Uncial Antiqua";
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.Door{
+    margin-top: 9em;
+    margin-left: 33.75%;
+    position: absolute;
+    width: 25em;
+    height: 15em;
+    color: rgb(14, 150, 205);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 1em;
+    box-shadow: none;
+}
+
+.friend{
+    width: 20em;
+    height: 25em;
+}
+
+.speak{
+    text-align: center;
+    padding: 0.5em;
+    outline: 3px solid  rgb(152, 134, 16);
+    
+}
+
+.Incorrectp{
+    color: rgb(192, 37, 37);
+    display: none;
+}
+
+.Middle-Earth{
+    background-image: url(LOTRMTLight.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: none;
+}
+
+header{
+    text-align: center;
+    margin-top: 2em;
+    color: rgb(186, 184, 49);
+}
+
+.title{
+    padding: 0.1em;
+    outline: 3px solid rgb(192, 37, 37);
+}
+
+.heading{
+    margin-top: 2em;
+    color: rgb(183, 167, 24);
+}
+
+button{
+   margin-top: 2em;
+   width: 12em;
+   height: 4.25em;
+   background-color:rgb(230, 185, 80); 
+   border: none;
+   border-radius: 3em;
+   padding-right: 5em;
+}
+
+button:focus{
+    border: 0;
+    outline: 0;
+}
+
+.btn{
+    width: 4.25em;
+    height: 4.25em;
+    margin-bottom: 0;
+    outline: 2px solid rgb(152, 134, 16);
+    border-radius: 3em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    transition: transform 0.55s ease-in-out;
+}
+
+.move{
+    transform:translateX(5em);
+}
+
+.LOTR{
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 75px;
+    align-items: center;
+}
+
+.card{
+    width: 14em;
+    height: 21em;
+    perspective: 1200px;
+}
+
+.flipcard{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    padding: 1em;
+}
+
+.card:hover .flipcard{
+    transform: rotateY(180deg);
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.mormode{
+    background-image:url(LOTRMRDark.jpeg);
+}

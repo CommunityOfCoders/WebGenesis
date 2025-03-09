@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Lord Of The Rings</title>
+        <meta name="description" content="LOTR Flip Cards">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/jpeg" href="LOTRCon.jpeg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Yatra+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="lotr.css">
+    </head>
+
+    <body>
+        
+        <div class="Door">
+            <img class="friend" src="Friend.jpeg">
+            <h2>Speak Friend and Enter!</h2>
+          <input class="userp" type="username" placeholder="">
+          <button class="speak" onclick="checkp()">Speak</button>
+          <p class="Incorrectp">You Shall Not Pass!</p>
+        </div>
+
+        <div class="Middle-Earth">
+        <header>
+          <div class="title">
+            <h1>The Lord Of The Rings
+            </h1>
+            <h2>By J.R.R. Tolkien</h2>
+          </div>
+            <h3 class="heading">Dark/Light Mode Toggle</h3>
+                <button class="mode" onclick="toggle()">
+                    <img class="btn"  src="LOTRCon.jpeg">
+                </button>
+        </header>
+      <div class="LOTR">
+      <div class="card">
+        <div class="flipcard">
+            <img class="front" src="RBOW1.jpeg">
+            <img class="back" src="FOTR.jpeg">
+        </div>
+        </div>
+        <div class="card">
+        <div class="flipcard">
+            <img class="front" src="RBOW2.jpeg">
+            <img class="back" src="TWT.jpeg">
+       </div>
+        </div>
+        <div class="card">
+       <div class="flipcard">
+           <img class="front" src="RBOW3.jpeg">
+           <img class="back" src="ROTK.jpeg">
+       </div>
+        </div>
+      </div>
+        </div>
+        
+        <script>
+
+            function checkp() {
+              const inputp = document.querySelector('.userp').value;
+
+              if(inputp == "Mellon" || inputp == "mellon" || inputp == "friend") {
+                document.querySelector('.Door').style.display = "none";
+                document.querySelector('.Middle-Earth').style.display = "block";
+              }
+
+              else{
+                document.querySelector('.Incorrectp').style.display = "block";
+              }
+              
+            }
+
+            function toggle() {
+                document.querySelector('.Middle-Earth').classList.toggle('mormode');
+                document.querySelector('.btn').classList.toggle('move');
+            }
+        </script>
+    </body>
+</html>
