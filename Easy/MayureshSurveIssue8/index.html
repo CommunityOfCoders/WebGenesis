@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Retro Personal Computer</title>
+        <meta name="description" content="Retro Personal Computer">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/jpeg" href="RetroCon.jpeg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="retro.css">
+    </head>
+    <body>
+        <div class="bg">
+         <div class="home">
+           <div class="app"><img class="homeimg" src="mypc.png">
+            <p class="appname">My PC</p>
+        </div>
+           <div class="app"><img onclick="openbox()" class="homeimg" src="gallery.png">
+            <p class="appname">Gallery</p>
+        </div>
+           <div class="app"><img class="homeimg" src="calc.png">
+            <p class="appname">Calculator</p>
+        </div>
+
+         </div>
+        
+         <div class="box">
+            <div class="bar">
+            <img onclick="back()" class="back" src="back.png">
+            </div>
+         <div class="gallery">
+               <img onclick="openpop(0)" class="userimg" src="vjti (1).jpeg">
+               <img onclick="openpop(1)" class="userimg" src="vjti (2).jpeg">
+               <img onclick="openpop(2)" class="userimg" src="vjti (3).jpeg">
+               <img onclick="openpop(3)" class="userimg" src="vjti (4).jpeg">
+               <img onclick="openpop(4)" class="userimg" src="vjti (5).jpeg">
+               <img onclick="openpop(5)" class="userimg" src="vjti (6).jpeg">
+               <img onclick="openpop(6)" class="userimg" src="vjti (7).jpeg">
+               <img onclick="openpop(7)" class="userimg" src="vjti (8).jpeg">
+               <img onclick="openpop(8)" class="userimg" src="vjti (9).jpeg">
+         </div>
+
+         <div class="popup" style="display: none;">
+            <div class="navbar">
+              <p class="name"> </p>
+              <img onclick="closepop()" class="close" src="close.png">
+            </div>
+            <div class="slide">
+              <img onclick="previmg()" class="prev" src="back.png">
+              <img onclick="nextimg()" class="next" src="next.png">
+            </div>
+            <img class="popimg" src="">
+       </div>
+
+         </div>
+         </div>
+
+        <script>
+
+           function openbox() {
+               document.querySelector('.home').style.display = "none";
+               document.querySelector('.box').style.display = "flex";
+           }
+
+           function back() {
+               document.querySelector('.home').style.display = "flex";
+               document.querySelector('.box').style.display = "none";
+           }
+
+           let images = ["vjti (1).jpeg",
+                         "vjti (2).jpeg", 
+                         "vjti (3).jpeg",
+                         "vjti (4).jpeg",
+                         "vjti (5).jpeg",
+                         "vjti (6).jpeg",
+                         "vjti (7).jpeg",
+                         "vjti (8).jpeg",
+                         "vjti (9).jpeg"]
+
+
+           let currentindex = 0;
+
+           function openpop(index) {
+                  currentindex = index;
+            
+                  document.querySelector('.popimg').src = images[currentindex];
+                  document.querySelector('.name').textContent = "Image " + (currentindex + 1);
+                  document.querySelector('.gallery').style.opacity = "0.5";
+                  document.querySelector('.popup').style.display = "flex";
+                  update();
+           }
+
+           function closepop() {
+                  document.querySelector('.gallery').style.opacity = "1";
+                  document.querySelector('.popup').style.display = "none";
+           }
+
+           function previmg() {
+            if(currentindex > 0) {
+                currentindex--;
+               document.querySelector('.name').textContent = "Image " + (currentindex + 1);
+               document.querySelector('.popimg').src = images[currentindex];
+               update();
+            }
+           }
+
+           function nextimg() {
+            if(currentindex < images.length - 1) {
+                currentindex++;
+               document.querySelector('.name').textContent = "Image " + (currentindex + 1);
+               document.querySelector('.popimg').src = images[currentindex];
+               update();
+            }
+           }
+
+           function update() {
+            if(currentindex == 0) {
+               document.querySelector('.prev').style.opacity = "0";
+            }
+            else{
+                document.querySelector('.prev').style.opacity = "1";
+            }
+
+            if(currentindex < images.length - 1) {
+               document.querySelector('.next').style.opacity = "1";
+            }
+            else{
+                document.querySelector('.next').style.opacity = "0";
+            }
+
+           }
+         
+        
+        </script>
+    </body>
+</html>
