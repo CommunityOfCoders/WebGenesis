@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" viewport="width=device-width, initial-scale=1.0">
+        <title>Ecommerce Website</title>
+        <link rel = "stylesheet" href = "nav.css">
+        <style>
+            #mobile {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #laptop {
+display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #washing {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #shoes {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #tshirt {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #shirt {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #bag {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #watch {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  #cat{
+    position: relative;
+    padding: 20px;
+    gap : 20px;
+    justify-content: center;
+    display: flex;
+    background-color: bisque;
+    
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    box-shadow: 3px 3px 3px 3px #ccc;
+    text-decoration: underline;
+    color: blue;
+    
+  }
+  .product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .product p {
+    font-size: 14px;
+    color: #555;
+  }
+  header{
+    text-align: center;
+  }
+  .btn{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+  }
+  h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 36px;
+    color: burlywood;
+    background-color: maroon;
+  }
+  button{
+    padding: 10px 20px;
+    margin: 0 10;
+    background-color: maroon;
+    color: burlywood;
+    border-radius: 30%;
+border-color: burlywood;
+  }
+  button:hover{
+    background-color: burlywood;
+    color: maroon;
+    border-color: burlywood;
+  }
+        </style>
+    </head>
+    <body>
+        <header>
+        <img src ="logo.jpeg" alt = "Logo" height = "200px" width = "200px">
+        <h1>SHOPZY</h1>
+        <input type = "search" name = "search" id = "search" placeholder = "Search for products" class = "search"><button type = "submit" id = "search_button" class="btn"><img src = "search.jpeg" alt="search logo" height="20px" width="20px"></button><br></br>
+        </header>
+        <div id = "cat">
+            <a href = "#mobile"><img src ="mobile_logo.jpg" alt = "Mobile" height = "40px" width = "40px">
+    <br>Mobiles</br></a>
+            <a href="#laptop"><img src ="laptop_logo.jpg" alt = "Laptop" height = "40px" width = "40px">
+    <br>Laptop</br></a>
+            <a href="#washing"><img src ="washing_logo.jpg" alt = "Washing Machine" height = "40px" width = "40px">
+    <br>Electronics</br></a>
+            <a href="#shoes"><img src ="shoes_logo.jpeg" alt = "Footwear" height = "40px" width = "40px">
+    <br>Footwear</br></a>
+            <a href="#tshirt"><img src ="t_logo.jpeg" alt = "Tshirts" height = "40px" width = "40px">
+    <br>Tshirts</br></a>
+<a href="#shirt"><img src ="shirt_logo.jpeg" alt = "Shirts" height = "40px" width = "40px"><br>Shirts</br></a>
+            <a href="#bag"><img src ="bag_logo.jpeg" alt = "Bags" height = "40px" width = "40px">
+    <br>Bags</br></a>
+            <a href="#watch"><img src ="watch_logo.jpeg" alt = "Mobile" height = "40px" width = "40px">
+    <br>Watches</br></a>
+            
+        </div>
+        <br></br>
+        <div id = "mobile">
+           <div class = "product">
+            <img src = "mobile1.jpeg" alt = "Mobile" height = "200px" width = "200px">
+        <h3>Samsung Galaxy S25 Ultra 5G AI Smartphone (GOLD, 12GB RAM, 512GB Storage)</h3>
+        <h4>-8% ₹1,29,999</h4>
+                <h4>M.R.P.: ₹1,41,999</h4>
+                <p>Inclusive of all taxes<br></br>
+                EMI starts at ₹6,303. No Cost EMI available</p>
+                <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                </div>
+                <div class = "product">
+            <img src = "mobile2.jpeg" alt = "Mobile" height = "200px" width = "200px">
+        Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Black, 12GB RAM, 512GB Storage)</h3>
+<h4>-8% ₹1,29,999</h4>
+    <h4>M.R.P.: ₹1,41,999</h4>
+    <p>Inclusive of all taxes<br></br>
+    EMI starts at ₹6,303. No Cost EMI available</p>
+    <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+    </div>
+    <div class = "product">
+            <img src = "mobile3.jpeg" alt = "Mobile" height = "200px" width = "200px">
+        <h3>iPhone 16 Pro 256 GB: 5G Mobile Phone</h3>
+        <h4>Lowest price in 30 days</h4>
+                <h4>₹1,22,900.00 with 5 percent savings-5% ₹1,22,900</h4>
+                <h4>M.R.P.: ₹1,29,900</h4>
+                <p>Inclusive of all taxes<br></br>
+                EMI starts at ₹5,958. No Cost EMI available</p>
+                <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+</div>
+<div class = "product">
+            <img src = "mobile4.jpeg" alt = "Mobile" height = "200px" width = "200px">
+        <h3>OnePlus 13 | Smarter with OnePlus AI (16GB RAM, 512GB Storage Arctic Dawn)</h3></th>
+        <h4>-4% ₹76,998</h4>
+                <h4>M.R.P.: ₹79,999</h4>
+                <p>Inclusive of all taxes<br></br>
+                EMI starts at ₹3,733. No Cost EMI available </p>
+                <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                </div>
+                </div>
+            
+        </div>
+        <div id = "laptop">
+        
+            <div class = "product">
+                    <img src = "laptop1.jpeg" alt = "Laptop" height = "200px" width = "200px">
+                <h3>Apple MacBook Air Apple M3 - (8 GB/512 GB SSD/macOS Sonoma) MRXP3HN/A  (13 Inch, Space Grey, 1.24 Kg)</h3>
+                <h4>Special price</h4>
+                       <h4> ₹1,13,900 ₹1,24,9008% off</h4>
+                    
+                        <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                       </div>
+                       <div class = "product">
+
+                    <img src = "laptop2.jpeg" alt = "Laptop" height = "200px" width = "200px">
+                <h3>HP Smartchoice Victus Gaming Laptop, 13th Gen Intel Core i5-13420H,6GB RTX 4050 Laptop</h3>
+                <h4>-14% ₹84,990</h4>
+                        <h4>M.R.P.: ₹99,382</h4>
+                        <p>Inclusive of all taxes<br></br>
+                        EMI starts at ₹4,120. No Cost EMI available</p>
+                        <button type="submit">Add To Cart</button><button type="submit">Buy Now</button> 
+</div>
+<div class = "product">           
+            
+                    <img src = "laptop3.jpeg" alt = "Laptop" height = "200px" width = "200px">
+                <h3>HP OMEN, 14th Gen Intel Core i7-14650HX, 8GB NVIDIA RTX 4060, 16GB Laptop</h3>
+                <h4>-19% ₹1,27,490</h4>
+                        <h4>M.R.P.: ₹1,57,945</h4>
+                        <p>Inclusive of all taxes<br></br>
+                        EMI starts at ₹6,181. No Cost EMI available </p>
+                        <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+</div>
+<div class = "product">
+                
+            
+                    <img src = "laptop4.jpeg" alt = "Laptop" height = "200px" width = "200px">
+                    <h3>ASUS ROG Strix G16 (2024), 16 "(40.64cm) QHD+ 240Hz, Intel Core i9 Laptop</h3>
+                    <h4>-17% ₹1,99,000</h4>
+                        <h4>M.R.P.: ₹2,39,990</h4>
+                        <p>Inclusive of all taxes<br></br>
+                        EMI starts at ₹9,648. No Cost EMI available</p>
+                        <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                    </div>   
+                    </div>
+            
+        
+        <div id = "washing">
+            <div class = "product">
+        
+
+                    <img src = "washing1.jpeg" alt = "Washing Machine" height = "200px" width = "200px">
+                <h3>Bosch 9kg 5 Star Washing Machine</h3>
+    <h4>-35% ₹38,900
+        M.R.P.: ₹59,990</h4>
+    <p>Inclusive of all taxes<br></br>
+EMI starts at ₹1,886. No Cost EMI available</p> 
+<button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+            </div>
+            <div class = "product">
+                    <img src = "washing2.jpeg" alt = "Washing Machine" height = "200px" width = "200px">
+                <h3>LG 9 Kg (Wash) / 5 Kg (Dry)</h3>
+                    
+                <h4>-28% ₹49,990</h4>
+                        <h4>M.R.P.: ₹68,990</h4>
+                        <p>Inclusive of all taxes
+EMI starts at ₹2,424. No Cost EMI available</p>
+<button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+        
+                    </div>
+                    </div>
+                    <div id = "shoes">
+                        <div class = "product">
+            
+                                <img src = "shoes1.jpeg" alt = "Shoes" height = "200px" width = "200px">
+                            <h3>Adidas Men's Sole Craze Running Shoe Men Life Style Sneakers</h3>
+                            <h4>-10% ₹4,499</h4>
+                                   <h4> M.R.P.: ₹4,999</h4>
+                                    <p>Inclusive of all taxes<br></br>
+                                    EMI starts at ₹218. No Cost EMI available</p>
+                                    <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                    </div>
+                    <div class = "product">
+                                <img src = "shoes2.jpeg" alt = "Shoes" height = "200px" width = "200px">
+                            <h3>Jordan Youth Air 1 Mid SE DH0200 100 85 - Size
+                            <h4>-40% ₹29,650</h4>
+                                   <h4> M.R.P.: ₹49,499</h4>
+                                    <p>Inclusive of all taxes<br></br>
+                                    EMI starts at ₹1,437. No Cost EMI available</p>
+                                    <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                    
+                        </div>
+
+                    </div>
+                    <div id = "tshirt">
+                        <div class = "product">
+                
+                                
+                
+        
+                            <img src = "tshirt1.jpeg" alt = "Tshirt" height = "200px" width = "200px">
+                        <h3>NBA The Lakers T Shirt</th>
+                        <h4>-50% ₹499</h4>
+                               <h4> M.R.P.: ₹999</h4>
+                                <p>Inclusive of all taxes</p>
+                                <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                        </div>
+                        <div class = "product">
+                            <img src = "tshirt2.jpeg" alt = "Tshirt" height = "200px" width = "200px">
+                        <h3>ADIDAS Mens M 3S Sj T T-Shirt</h3>
+                       <h4> ₹1,499</h4>
+                                <p>Inclusive of all taxes<br></br>
+                                EMI starts at ₹136 per month.</p>
+                                <button type="submit">Add To Cart</button><button type="submit">Buy Now</button> 
+                </div>
+                <div class = "product">
+                            <img src = "tshirt3.jpeg" alt = "Tshirt" height = "200px" width = "200px">
+                       <h3> U.S. POLO ASSN. Men's Regular Fit T-Shirt
+                        <h4>-40% ₹1,259</h4>
+                               <h4> M.R.P.: ₹2,099</h4>
+                                <p>Inclusive of all taxes<br></br>
+                                EMI starts at ₹114 per month. </p>
+                                <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                </div>
+                        
+                    </div>
+                    <div id = "shirt">
+                    
+                        <div class = "product">
+                                <img src = "shirt1.jpeg" alt = "Shirt" height = "200px" width = "200px">
+                            <h3>Peter England Men's Checkered Slim Fit Shirt</h3>
+                            <h4>-50% ₹899</h4>
+                                    <h4>M.R.P.: ₹1,799</h4>
+                                   <p> Inclusive of all taxes</p>
+                                   <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                    </div>
+                    <div class = "product">
+                                <img src = "shirt2.jpeg" alt = "Shirt" height = "200px" width = "200px">
+                            <h3>Allen Solly Men's Solid Regular Fit Shirt</h3>
+                            <h4>-42% ₹1,009</h4>
+                                    <h4>M.R.P.: ₹1,749</h4>
+                                    <p>Inclusive of all taxes<br></br>
+                                    EMI starts at ₹92 per month. </p>
+                                    <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                    </div>
+                                
+                                </div>
+                                <div id = "bag">
+                                    <div class = "product">
+                        
+                                            <img src = "bag1.jpeg" alt = "Bag" height = "200px" width = "200px">
+                                        <h3>adidas Alliance Ii Sackpac</h3>
+                                        <h4>-30% ₹4,450</h4>
+                                                <h4>M.R.P.: ₹6,359</h4>
+                                                <p>Inclusive of all taxes<br></br>
+                                                EMI starts at ₹216. No Cost EMI available</p>
+                                                <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                                </div>
+                                <div class = "product">
+                            
+                                                <img src = "bag2.jpeg" alt = "Bag" height = "200px" width = "200px">
+                                            <h3>Tommy Hilfiger Men Burlington 14 Inch Laptop Backpack - Black</h3><h4>
+                                            <h4>-20% ₹7,999</h4>
+                                                   <h4> M.R.P.: ₹9,999</h4>
+                                                    <p>Inclusive of all taxes<br></br>
+                                                    EMI starts at ₹388. No Cost EMI available</p>
+                                                    <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                            
+                                        </div>
+                                        </div>
+                                        <div id = "watch">
+                                            <div class = "product">
+                                
+                                                    <img src = "watch1.jpeg" alt = "Watch" height = "200px" width = "200px">
+                                                <h3>Scuderia Ferrari Apex Series 2</h3>
+                                                <h4>₹17,950</h4>
+                                                        <p>Inclusive of all taxes<br></br>
+                                                        EMI starts at ₹870. No Cost EMI available</p>
+                                                        <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                                    </div>
+                                    <div class = "product">    
+                                    
+                                                    <img src = "watch3.jpeg" alt = "Watch" height = "200px" width = "200px">
+                                                <h3>Titan Men's Timeless Style Analog Watch: Refined Black Dial and Metal Strap-1806NM01</h3><p>
+                                                <h4>₹3,995<h4>
+                                                        <p>Inclusive of all taxes<br></br>
+                                                        EMI starts at ₹194. No Cost EMI available</p>
+                                                        <button type="submit">Add To Cart</button><button type="submit">Buy Now</button>
+                                        </div>
+                                                    
+                                                    </div>
+</body>
+</html>

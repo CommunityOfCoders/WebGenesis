@@ -1,0 +1,109 @@
+#mobile {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #laptop {
+display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #washing {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #shoes {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #tshirt {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #shirt {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #bag {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  #watch {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  }
+  .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  #cat{
+    position: relative;
+    padding: 20px;
+    gap : 20px;
+    justify-content: center;
+    display: flex;
+    background-color: bisque;
+    
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    box-shadow: 3px 3px 3px 3px #ccc;
+    text-decoration: underline;
+    color: blue;
+    
+  }
+  .product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .product p {
+    font-size: 14px;
+    color: #555;
+  }
+  header{
+    text-align: center;
+  }
+  .btn{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+  }
+  h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 36px;
+    color: burlywood;
+    background-color: maroon;
+  }
+  button{
+    padding: 10px 20px;
+    margin: 0 10;
+    background-color: maroon;
+    color: burlywood;
+    border-radius: 30%;
+border-color: burlywood;
+  }
+  button:hover{
+    background-color: burlywood;
+    color: maroon;
+    border-color: burlywood;
+  }
