@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>The Cube Genesis</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="navbar">
+        <div><a href="main.html" class="CubeGenesis">TheCubeGenesis</a></div>
+        <div class="menuicon" id="menu-icon">
+            <span class="material-icons">menu</span>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#Learn" class="Learn">Learn</a></li>
+            <li class="dropdown">
+                <a href="#About Us" class="about">About Us</a>
+                <div class="dropdown_content">
+                    <a href="#creator">The Creator</a>
+                    <a href="#goals">Our Goals</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+    </div>
+
+    <script>
+      const menuIcon = document.getElementById('menu-icon');
+      const navLinks = document.getElementById('nav-links');
+         
+      menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');});
+    </script>
+
+</body>
+</html>

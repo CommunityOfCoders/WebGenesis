@@ -1,0 +1,119 @@
+body, ul{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.navbar{
+ display: flex;
+ justify-content: space-between;
+ align-items: center; 
+ padding: 15px;  
+
+}
+
+.CubeGenesis{
+    margin-left: 10px;
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: rgb(197, 197, 197);
+    text-decoration: none;
+}
+
+.navbar ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar ul li a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    font-weight: 700;
+
+}
+
+body{
+    background-image: url(cube\ home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+
+}
+
+.Learn{
+    border: 2px solid rgb(197, 197, 197); 
+    padding: 5px 10px;  
+    border-radius: 5px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown .dropdown_content{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    min-width: 150px;
+}
+
+.dropdown:hover .dropdown_content{
+    display: block;
+    background-color: transparent;
+}
+
+.dropdown_content a{
+    display: block;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+
+}
+
+.menuicon{
+    color: white;
+    display: none;
+}
+
+@media (min-width: 750px){
+    .menuicon{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .navbar ul{
+        display: none;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .dropdown .dropdown_content{
+        left: 75px;
+        top: -60px;
+    }
+
+}
