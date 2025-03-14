@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EGPT</title>
+        <meta name="description" content="EGPT AI Chat-Bot">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/jpeg" href="Egptcon.jpeg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="kemet.css">
+    </head>
+    <body>
+        <header>
+            <div class="headicons">
+            <img class="open" src="Egptopen.jpeg">
+            <h3>EGPT</h3>
+            </div>
+            <div class="headbuttons">
+                <button style="background-color: gray;" class="headbtn">Login</button>
+                <button style="background-color: rgb(46, 46, 46);;" class="headbtn">Sign Up</button>
+            </div>
+        </header>
+        <div class="sidebar">
+            <div class="list">
+                <div class="bar">
+                <li><img class="close" src="Egptclose.jpeg"></li>
+                <li><img class="barimg" src="search.png"></li>
+                </div>
+                <li>&#x132F9 EGPT</li>
+                <li>&#x1310C IRET</li>
+                <li>&#x13080 Explore</li>
+                <li>&#x131A3 My Projects</li>
+        </div>
+        </div>
+       <div class="main">
+        <h2 class="head">&#x132F9 What can I help with? &#x132F9</h2>
+        <div class="textbox">
+            <input class="text" type="text" placeholder="Ask EGPT Anything">
+            <div class="textbar">
+                <div class="chatbar">
+            <button class="icon">&#x1339B Attach</button>
+            <button onclick="toggle(this)" class="icon">&#x13080 Search</button>
+            <button onclick="toggle(this)" class="icon">&#x13184 Reason</button>
+            </div>
+            <button style="background-color: gray;" class="pbtn"><img src="voice.png">Voice</button>
+            </div>
+        </div>
+            <div class="options">
+
+            </div>
+       </div>
+        <script>
+             
+             function toggle(button){
+                button.classList.toggle('select');
+             }
+
+            document.querySelector('.text').addEventListener('input', function() {
+                const inputvalue = document.querySelector('.text').value;
+                if(inputvalue !== "") {
+                document.querySelector('.pbtn').innerHTML = '<img src="arrow.png">';
+                document.querySelector('.pbtn').classList.add('switch');
+                }
+                else{
+                    document.querySelector('.pbtn').innerHTML = '<img src="voice.png">Voice';
+                    document.querySelector('.pbtn').classList.remove('switch');
+                }
+            })
+
+            const open = document.querySelector('.open');
+            const close = document.querySelector('.close');
+            const sidebar = document.querySelector('.sidebar');
+
+            open.addEventListener('click', ()=> {
+                sidebar.classList.add('slide');
+            })
+
+            close.addEventListener('click', ()=> {
+                sidebar.classList.remove('slide');
+            })
+
+        </script>
+    </body>
+</html> 
