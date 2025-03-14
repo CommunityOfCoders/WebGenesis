@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>| Portfolio |</title>
+        <meta name="description" content="Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/jpg" href="ajantacon.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="amidvar.css">
+    </head>
+    <body>
+        <div class="main">
+           <header>
+            <h1> My Portfolio</h1>
+           </header>
+           <h2> || Namaste! I am <span>Mayuresh Surve</span> ||</h2>
+           <div class="info">
+            <p >Namaste! I am Mayuresh Surve, a first-year Electronics & Telecommunications Engineering student at VJTI, Mumbai.
+                I am a budding engineer with a passion for creating unique yet useful software and hardware projects. 
+                I am equipped with the knowledge of HTML, CSS, JS and C++ which I have used to design multiple innovative projects. 
+                I intend to capture and blend the richness of our culture and our modern technology to blossom into such impactful projects. 
+                Engaging in such ventures have enhanced my skills and  my enthusiasm for all things tech.</p>
+        </div>
+           <h3>Projects</h3>
+             <div class="gallery">
+            <img style="display: block;"  class="img" src="RETRO.jpeg">
+            <img class="img bg" src="EGPT.jpeg">
+            <img class="img bg" src="VEDA.jpeg">
+            <img class="img bg" src="LOTR.jpeg">
+            <img class="img bg" src="LCR.jpeg">
+        </div>
+        <div class="arrow">
+            <img onclick="prev()" class="prev" src="back.png">
+            <img onclick="next()" class="next" src="next.png">
+        </div>
+
+        <div class="Images">
+            <div class="comp">
+                <h3>Skills</h3>
+            <div class="skills">
+               <img class="skill" src="html.png">
+               <img class="skill" src="css.png">
+               <img class="skill" src="js.png">
+               <img class="skill" src="c++.png">
+            </div>
+            </div>
+            <div class="socials">
+                <h3>Socials</h3>
+            <div class="links">
+               <a href="https://github.com/amimayo"><img class="link" src="github.png"></a>
+               <img class="link" src="linkedin.png">
+               <img class="link" src="x.png">
+               <img class="link" src="stacko.png">
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <script>
+              
+             let images = document.querySelectorAll('.img');
+             let currentIndex = 0; 
+
+            function next() {
+                
+                if(currentIndex < images.length - 1){
+                images[currentIndex].style.display = "none";
+                currentIndex++;
+                images[currentIndex].style.display = "block";
+                }
+
+                arrow();
+
+            }
+
+            function prev() {
+                
+                if(currentIndex > 0) {
+                images[currentIndex].style.display = "none";
+                currentIndex--;
+                images[currentIndex].style.display = "block";
+                }
+                
+                arrow();
+             }
+
+             function arrow() {
+                
+                if(currentIndex == 0) {
+                    document.querySelector('.prev').style.display = "none";
+                }
+
+                else{
+                    document.querySelector('.prev').style.display = "block";
+                }
+
+                if(currentIndex == images.length - 1) {
+                    document.querySelector('.next').style.display = "none";
+                }
+
+                else{
+                    document.querySelector('.next').style.display = "block";
+                }
+             }
+
+             document.body.style.overflowX = "hidden";
+        </script>
+    </body>
+</html>
