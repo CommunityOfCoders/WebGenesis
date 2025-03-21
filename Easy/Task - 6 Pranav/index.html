@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="button_div">
+        <div id="menu-container">
+        <button id="click" ><img src="image.png" alt="" height="30px" width="30px"></button><br>
+        <h2 id="menu">Menu: </h2>
+        </div>
+        <input type="search" name="Search" id="search" placeholder="Enter your Thoughts">
+        <div id="div-task">
+            <h3>Tasks</h3>
+            <span class="span"><a href="">Upcoming</span></a><br>
+            <span class="span"><a href="">Today</span></a><br>
+            <span class="span"><a href="">Calender</span></a><br>
+            <span class="span"><a href="">Sticky Walls</span></a><br>
+        </div>
+        <div id="div-list">
+            <h3>Lists</h3>
+            <span class="span"><a href="">Personal</span></a><br>
+            <span class="span"><a href="">Work</span></a><br>
+            <span class="span"><a href="">List 1</span></a><br>
+            <span class="span"><a href="">+ Add Your List</span></a><br>
+        </div>
+        <nav class="nav">
+            <ul><a href="">Settings</a></ul>
+            <ul><a href="">Sign Out</a></ul>
+        </nav>
+    </div>
+    <div id="front">
+        <h1 id="h1">Today</h1>
+        <div id="add">+ Add New Task</div>
+        <div id="task-list">
+            <div class="task">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-text">Complete the UI/UX assignment</span>
+            </div>
+            <div class="task">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-text">Water The plants</span>
+            </div>
+            <div class="task">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-text">Watch Invincible</span>
+            </div>
+            <div class="task">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-text">Complete Web Genesis Task 6</span>
+            </div>
+        </div>
+        <div class="save-box">
+            <button class="delete-btn">Delete Task</button>
+            <button class="save-btn">Save Changes</button>
+        </div>
+    </div>
+    <div id="div_task">
+        <h2>Task: </h2><br>
+        <div class="create1">Create Today's Youtube Video</div>
+       <input type="text" id="create1" placeholder="Description">
+
+       <div class="task-section">
+        <div class="task-row">
+            <label for="list">List</label>
+            <select id="list" class="dropdown">
+                <option>Personal</option>
+                <option>Work</option>
+            </select>
+        </div>
+    
+        <div class="task-row">
+            <label for="due-date">Due date</label>
+            <input type="date" id="due-date" class="date-input">
+        </div>
+    
+        <div class="task-row">
+            <label>Tags</label>
+            <span class="tag">Tag 1</span>
+            <button class="add-tag">+ Add Tag</button>
+        </div>
+    
+        <h3 class="subtasks-title">Subtasks:</h3>
+        
+        <div class="subtask-row">
+            <button class="add-subtask">+ Add New Subtask</button>
+        </div>
+    
+        <div class="subtask-item">
+            <input type="checkbox" id="subtask1">
+            <label for="subtask1">Subtask</label>
+        </div>
+    </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,306 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: space-evenly; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Ensures full viewport height */
+    background-color: rgb(240, 232, 221);
+    margin: 0; /* Remove default margin */
+    gap: 20px;
+}
+
+#front {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Reduce space between elements */
+    border-radius: 15px;
+    width: 50%;
+    height: 80vh;
+    background-color: whitesmoke;
+    font-family: Poppins, sans-serif;
+    font-size: larger;
+    padding-top: 20px; /* Add padding for spacing */
+}
+
+#h1{
+    margin: 40px;
+    margin-bottom: 0%;
+}
+
+#button_div {
+    display: flex;
+    flex-direction: column; /* Search bar below menu */
+    background-color: rgb(179, 178, 178);
+    height: 90%;
+    width: 30%;
+    border-radius: 15px;
+    padding: 15px;
+    gap: 15px;
+    align-items: flex-start; /* Align content to the left */
+}
+
+#menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Push Menu text and button apart */
+    width: 100%;
+}
+
+#click {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    left: 100%
+}
+
+#div_task{
+    font-family: Poppins;
+    background-color: rgb(179, 178, 178);
+    height: 90%;
+    width: 30%;
+    padding-left: 20px;
+    border-radius: 15px;
+}
+
+#search {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background: transparent;
+    border: 1px solid grey;
+    outline: none;
+    color: black;
+}
+
+#menu {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#div-task{
+    position: relative;
+    width: 90%;
+    height: 33%;
+    font-family: Poppins;
+    border-radius: 10px;
+    border: 1px solid grey;
+
+}
+
+#div-task h3{
+    padding-left: 20px;
+    margin-bottom: 0%;
+}
+
+.span a{
+    text-decoration: none;
+    color: black;
+    padding-left: 10%;
+}
+
+#div-list{
+    position: relative;
+    width: 90%;
+    height: 33%;
+    font-family: Poppins;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+#div-list h3{
+    padding-left: 20px;
+    margin-bottom: 0%;
+}
+
+.nav{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.nav ul{
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+.nav ul a{
+    text-decoration: none;
+    color:black;
+}
+
+#add {
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 80%; /* Make it 90% of the white box */
+    padding: 10px; /* Add some padding for better look */
+    text-align: left; /* Center text inside */
+    margin-left: 5%; /* Center within the parent div */
+    cursor: pointer; /* Make it clickable */
+    background-color: #f5f5f5; /* Light background */
+}
+
+#task-list{
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 80%; /* Make it 90% of the white box */
+    padding: 10px; /* Add some padding for better look */
+    text-align: left; /* Center text inside */
+    margin-left: 5%; /* Center within the parent div */
+    cursor: pointer; /* Make it clickable */
+    background-color: #f5f5f5;
+}
+
+.task{
+    font-weight: 500;
+    font-size: medium;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 1%;
+}
+
+.create1 {
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 80%; /* Make it 90% of the white box */
+    padding: 10px; /* Add some padding for better look */
+    text-align: left; /* Center text inside */
+    margin-left: 5%; /* Center within the parent div */
+    cursor: pointer; /* Make it clickable */
+    gap : 10px;
+}
+
+#create1{
+    background: transparent;  /* Removes background */
+    border: 1px solid grey;  /* Keeps a border if needed */
+    height: 20%;  /* Adjust height */
+    width: 80%;  /* Makes input fill the container */
+    padding:10px; /* Adds padding for better look */
+    outline: none;
+    text-align: left; /* Center text inside */
+    margin-left: 5%;
+    margin-top: 3%;
+    font-size: 16px;
+    border-radius: 5px; /* Optional: Round corners */
+}
+
+.task-section {
+    position: relative;
+    background: transparent;
+    border: 1px solid gray;
+    padding:10px; /* Adds padding for better look */
+    outline: none;
+    text-align: left; /* Center text inside */
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 8px;
+    height: 19%;
+    width: 80%;
+    font-family: Arial, sans-serif;
+}
+
+.task-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.dropdown, .date-input {
+    background: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.tag {
+    background: #d3e4e4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.add-tag {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.subtasks-title {
+    margin-top: 15px;
+    font-size: medium;
+}
+
+.subtask-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.add-subtask {
+    background: transparent;
+    border: none;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.subtask-item {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.save-box {
+    display: flex;
+    justify-content: flex-end;  /* Aligns items to the right */
+    position: relative;         /* Positioning it inside the white box */
+    bottom: 10px;               /* Adjusts distance from bottom */
+    right: 10px;                /* Adjusts distance from right */
+    gap: 10px;                  /* Adds space between buttons */
+    width: 100%;                /* Ensures it takes full width */
+    margin-top: 10%;
+}
+
+.delete-btn, .save-btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border : none;
+}
+
+.save-btn {
+    background-color: gold;
+    font-weight: bold;
+}
+
+
+
+
+
+
