@@ -1,0 +1,45 @@
+/* Basic Reset */
+body{
+    margin:0%;
+    padding:0%;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210408/pngtree-white-abstract-vector-web-background-design-image_597636.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+ul{
+    list-style-type:none;
+    background-color: rgba(84, 81, 81, 0.348);
+}
+ul li{    
+    display:inline-block;
+    font-size:x-large;
+    padding:10px;
+}
+ul li:hover{
+    background-color: rgba(161, 157, 157, 0.582);
+}
+
+
+.Drop1{
+    display:none
+}
+ul li:hover .Drop1{
+    display: block;
+    position: absolute;
+}
+.Drop1 ul li{
+    display:block;
+    margin-top: 10px;
+    margin-left: -40px;
+    font-size: large;
+}
+.Drop2{display:none}
+
+.Drop1 ul li:hover .Drop2{
+    display: block;
+    position:absolute;
+    margin-left: 3.69cm;
+    margin-top: -1.08cm;
+}
