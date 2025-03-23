@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(background.jpg);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: #ffcc00;
+}
+
+.ddm1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    min-width: 150px;
+    padding: 0;
+    font-size: smaller;
+}
+
+.dd1:hover .ddm1 {
+    display: block;
+}
+
+.ddm1 li {
+    display: block;
+    padding: 10px;
+}
+
+.ddm1 li:hover {
+    background-color: #222;
+    color: #ffcc00;
+}
+
+.ddm2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: black;
+    min-width: 150px;
+    padding: 0;
+    font-size: 15px;
+}
+
+.dd2:hover .ddm2 {
+    display: block;
+}
+
+.ddm2 li {
+    display: block;
+    padding: 10px;
+}
+
+.ddm2 li:hover {
+    background-color: #222;
+    color: #ffcc00;
+}
