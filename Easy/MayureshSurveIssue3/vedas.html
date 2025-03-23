@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mythoveda | Vedas</title>
+        <meta name="description" content="Mythoveda">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/jpeg" href="Swasticon.jpeg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="vedas.css">
+    </head>
+    <body>
+        <header>
+      <h1>|| Welcome To Mythoveda ||</h1>
+      <h2>An Enclyopedia of Hindu Myths & History</h2>
+     </header>
+     <nav class="Vedas">
+        <h2>Vedas</h2>
+        <ul class="Links">
+                       <img class="menuclose" src="menuclose.svg">
+                       <li class ="drop">
+                        <a href="index.html"><img class="icon" src="home.svg">
+                          Home</a>
+                    </li>
+                      <li class ="drop">
+                        <a href="#"><img class="icon" src="intro.svg">Introduction</a>
+                    </li>
+                      <li class ="drop">
+                        <button class="dropbtn"><img class="icon" src="books.svg">Vedas 
+                            <img class="menuarrow" src="menuarrow.svg"></button>
+                        <ul class="dropmenu">
+                            <li><a href="#">Rig Veda</a></li>
+                            <li><a href="#">Yajur Veda</a></li>
+                            <li><a href="#">Sāma Veda</a></li>
+                            <li><a href="#">Atharva Veda</a></li>
+                        </ul>
+                    </li>
+                    <li class ="drop">
+                        <button class="dropbtn"><img class="icon" src="com.svg">Community 
+                            <img class="menuarrow" src="menuarrow.svg"></button>
+                        <ul class="dropmenu">
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Articles</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                 <li class="drop">
+                        <button class="dropbtn"><img class="icon" src="lib.svg">Library 
+                            <img class="menuarrow" src="menuarrow.svg"></button>
+                        <ul class="dropmenu">
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Other Resources</a></li>
+                            <li><a href="#">Contribute</a></li>
+                        </ul>
+                            </li>
+                </ul>
+                <img src="menuopen.svg" class="menuopen">
+        </nav>
+        <script>
+
+            const menu = document.querySelector('.Links');
+            const open = document.querySelector('.menuopen');
+            const close = document.querySelector('.menuclose');
+            
+            open.addEventListener('click', () => {
+                menu.classList.add('open')
+                open.style.display = 'none';
+                close.style.display = 'block';
+            })
+
+            close.addEventListener('click', () => {
+                menu.classList.remove('open')
+                close.style.display = 'none';
+                open.style.display = 'block';
+            }) 
+
+            document.addEventListener('click', e => {
+                const dropbutton = e.target.matches('.dropbtn')
+                if(!dropbutton && e.target.closest('.drop')!=null) return 
+
+                let currentdp
+                if(dropbutton) {
+                    currentdp = e.target.closest('.drop')
+                    currentdp.classList.toggle('open')
+                }
+
+                document.querySelectorAll('.drop.open').forEach(drop => {
+                    if(drop === currentdp) return
+                    drop.classList.remove('open')
+                })
+            })
+
+            document.body.style.overflow = "visible";
+            document.documentElement.style.overflow = "visible";
+            document.body.style.overflowX = "hidden";
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+.Container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    border: 2px solid black;
+    border-radius: 7px;
+    gap:2px;
+    width: 280px;
+    height: 500px;
+    padding-top: 5px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    background-color: rgb(213, 213, 213);
+}
+
+
+.btn{
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    color:black;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: grey;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.Display {
+    grid-area: 1 / 1 / 3 / 4;
+    font-family: "Orbitron", sans-serif;
+    color:black;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(158, 157, 157);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1px; 
+}
+
+.Que{
+    text-align: left;
+    font-size: x-large;
+    word-wrap: break-word;
+    overflow: auto;
+    scrollbar-width: thin;
+    max-height: 70%;
+}
+.Ans{
+    text-align: right;
+    font-size: large;
+    word-wrap: break-word;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+.button2 {grid-area: 3 / 1 / 4 / 2;}
+.button3 {grid-area: 3 / 2 / 4 / 3;}
+.button4 {grid-area: 3 / 3 / 4 / 4;}
+.button5 {grid-area: 4 / 1 / 5 / 2;}
+.button6 {grid-area: 4 / 2 / 5 / 3;}
+.button7 {grid-area: 4 / 3 / 5 / 4;}
+.button8 {grid-area: 5 / 1 / 6 / 2;}
+.button9 {grid-area: 5 / 2 / 6 / 3;}
+.button10 {grid-area: 5 / 3 / 6 / 4;}
+.button11 {grid-area: 6 / 3 / 7 / 4;}
+.button12 {grid-area: 6 / 2 / 7 / 3;}
+.button13 {grid-area: 6 / 1 / 7 / 2;}
+.button14 {grid-area: 7 / 1 / 8 / 2;}
+.button15 {grid-area: 8 / 2 / 9 / 3;}
+.button16 {grid-area: 7 / 2 / 8 / 3;}
+.button17 {grid-area: 8 / 1 / 9 / 2;}
+.button18 {grid-area: 9 / 1 / 10 / 2;}
+.button19 {grid-area: 9 / 2 / 10 / 3;}
+.button20 {grid-area: 7 / 3 / 8 / 4;}
+.button21 {grid-area: 3 / 4 / 4 / 5;}
+.button22 {grid-area: 4 / 4 / 5 / 5;}
+.button23 {grid-area: 5 / 4 / 6 / 5;}
+.button24 {grid-area: 6 / 4 / 7 / 5;}
+.button25 {grid-area: 7 / 4 / 8 / 5;}
+.button27 {grid-area: 8 / 3 / 9 / 4;}
+.button28 {grid-area: 9 / 3 / 10 / 4;}
+.button26 {grid-area: 8 / 4 / 9 / 5;}
+.equal {grid-area: 9 / 4 / 10 / 5;}
+.button29 {grid-area: 1 / 4 / 2 / 5;}
+.button30 {grid-area: 2 / 4 / 3 / 5;}
+
+.btn:hover{
+    background-color: rgb(109, 109, 109);
+}
+
+

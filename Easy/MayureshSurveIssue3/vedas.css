@@ -1,0 +1,127 @@
+body {
+
+    background-image: url(garudabg.jpeg);
+    background-position: right center;
+    margin: 0 ;
+    font-family: "Yatra One";
+    }
+
+    header{
+        text-align: center;
+        color: rgb(155, 46, 16);
+        background-color: rgb(201, 172, 129);
+        outline : 9px solid rgb(155, 46, 16);
+    }
+
+    .Vedas{
+      background-color:rgb(244, 213, 176);
+      outline: 3px solid rgb(155, 46, 16);
+      margin: 2em 0em 2em 0em;
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-direction:row ;
+      justify-content: space-between;
+      color: rgb(155, 46, 16);
+    }
+
+    .menuclose, .menuopen{
+      height:auto;
+      max-height: 40px;
+      margin-top: 0.5em;
+      width: 40px;
+    }
+
+    .Vedas h2, a{
+      margin : 0.5em;
+      color: rgb(155, 46, 16);
+    }
+    
+    .Vedas h2{
+         margin-left: 2em; 
+    }
+
+    a{
+      margin : 0.5em;
+      color: rgb(155, 46, 16);
+      text-decoration: none;
+      &:hover{
+        color:blueviolet ;
+      }
+    }
+     
+    .Links {
+        display: flex;
+        justify-content:flex-start;
+        text-align: left;
+        list-style: none;
+        padding: 1em;
+        gap: 3em;
+        margin-right: 0;
+        flex-direction: column;
+        background-color: rgb(244, 213, 176);
+        border: 3px solid rgb(155, 46, 16);
+        border-top: 0;
+        position: absolute;
+        top: 2.9em;
+        right: 0;
+        min-height: 175vh;
+        z-index: 500;
+        transform:translate(70%);
+        transition:transform 0.5s ease-in-out;
+      }
+
+      button{ 
+        font-family: 'Yatra One';
+        border: none;
+        background-color: rgb(244, 213, 176);
+        color: rgb(155, 46, 16) ;
+        font-size: 1em;
+      }
+
+      .menuarrow{
+        height:auto;
+        max-height: 25px;
+        width: 25px;
+        vertical-align: middle;
+        margin-left: 2em;
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .icon{
+        height:auto;
+        max-height: 30px;
+        width: 30px;
+        vertical-align: middle;
+        margin-right: 2em;
+      }
+    
+    
+    .dropmenu{
+        list-style: none;
+        padding-left: 0;
+        margin-top: 1em;
+        margin-left: 3em;
+        display: none;
+    }
+
+    .drop.open > button + .dropmenu {
+        display: block;
+    }
+
+    .drop.open .menuarrow {
+      transform: rotate(90deg);
+    }
+
+    .menuclose, .menuopen{
+        display: block;
+        margin-right: 1em;
+      }
+
+      .menuclose{
+        display:none;
+      }
+  
+      .Links.open{
+        transform:translate(0%);
+      }

@@ -19,7 +19,7 @@
     border-radius: 10px;
     text-align: center;
 }
-::placeholder{
+.in::placeholder{
     color: white;
 }
 .heading {
@@ -32,10 +32,6 @@
     margin: 10px 0;
     background-color: rgb(58, 67, 83);
     border-radius: 5px;
-}
-input ::placeholder
-{
-    color:white;
 }
 .button {
     width: 100%;

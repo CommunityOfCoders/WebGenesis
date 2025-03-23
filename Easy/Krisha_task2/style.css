@@ -1,0 +1,94 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+header{    
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    position: fixed;
+    color:aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h1{
+    color: aliceblue; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+
+nav .logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(103, 130, 180, 0.267);
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+ 
+nav ul li{
+    position: relative;
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: rgba(1, 26, 73, 0.767);
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none;
+    border-radius: 10px;
+}
+.dropdown1{
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    background-color: rgba(0, 26, 73, 0.767);
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none;
+    border-radius: 10px;
+}
+nav ul li:hover .dropdown{
+    display: block;
+}
+.dropdown li:hover .dropdown1{
+    display: block;
+    }
+
+    nav .sign-in button {
+        padding: 10px 10px;
+        background-color: #a0d0fd;
+        color: black;
+        border-radius: 10px;
+        border-color: black;
+        cursor: pointer;
+        margin-right: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    
+
+    
+        

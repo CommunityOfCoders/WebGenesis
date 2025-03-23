@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="Container">
+    <div class="Display"> 
+        <div class="Que">0</div>
+        <div class="Ans"></div>  
+    </div>
+    <button class="button29 btn" onclick="input('e')">e</button>
+    <button class="button30 btn" onclick="input('π')">π</button>
+    <button class="button3 btn" onclick="input(`cos`); inputbr();"> cos</button>
+    <button class="button2 btn" onclick="input(`sin`); inputbr();"> sin</button>
+    <button class="button4 btn" onclick="input(`tan`); inputbr();"> tan</button>
+    <button class="button5 btn" onclick="input(`asin`); inputbr();"> sin<sup>-1</sup></button>
+    <button class="button6 btn" onclick="input(`acos`); inputbr();"> cos<sup>-1</sup></button>
+    <button class="button7 btn" onclick="input(`atan`); inputbr();"> tan<sup>-1</sup></button>
+    <button class="button8 btn" onclick="allclear()">AC</button>
+    <button class="button9 btn" onclick="input('√')">√</button>
+    <button class="button10 btn" onclick="input('^')">^</button>
+    <button class="button11 btn" onclick="input('3')">3</button>
+    <button class="button12 btn" onclick="input('2')">2</button>
+    <button class="button13 btn" onclick="input('1')">1</button>
+    <button class="button14 btn" onclick="input('4')">4</button>
+    <button class="button15 btn" onclick="input('8')">8</button>
+    <button class="button16 btn" onclick="input('5')">5</button>
+    <button class="button17 btn" onclick="input('7')">7</button>
+    <button class="button18 btn" onclick="input('.')">.</button>
+    <button class="button19 btn" onclick="input('0')">0</button>
+    <button class="button20 btn" onclick="input('6')">6</button>
+    <button class="button21 btn" onclick="inputbr()">(</button>
+    <button class="button22 btn" onclick="inputcbr()">)</button>
+    <button class="button23 btn" onclick="input('÷')">÷</button>
+    <button class="button24 btn" onclick="input('×')">×</button>
+    <button class="button25 btn" onclick="input('-')">-</button>
+    <button class="button27 btn" onclick="input('9')">9</button>
+    <button class="button28 btn" onclick="backspace()">Del</button>
+    <button class="button26 btn" onclick="input('+')">+</button>
+    <button class="equal btn" onclick="calculate()">=</button>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

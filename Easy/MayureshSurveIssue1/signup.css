@@ -1,0 +1,69 @@
+body {
+
+  background-image: url(SignupBG.jpeg) ;
+  background-position: right center;
+  margin: 0 ;
+  font-family: "Yatra One";
+  
+  }
+  
+  header {
+      text-align: center;
+      color: rgb(155, 46, 16);
+      background-color: rgb(201, 172, 129);
+      outline : 9px solid rgb(155, 46, 16);
+  }
+  
+  .SignUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 45vh;
+    color: rgb(155, 46, 16);
+  
+    form {
+      background-color: rgb(244, 213, 176);
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+      border: 3px solid rgb(155, 46, 16) ;
+    }
+  
+    button {
+      background-color: rgb(201, 172, 129);
+      color: rgb(155, 46, 16);
+      border-radius: 1em;
+      border: none;
+      outline : 3px solid rgb(155, 46, 16) ;
+      font-family: "Yatra One";
+    }
+  
+    p {
+      margin-top: 1em;
+      background-color:  rgb(201, 173, 130);
+      border-radius: 1em;
+      outline : 3px solid rgb(155, 46, 16);
+      padding: 5px;
+      color: rgb(155, 46, 16);
+      a{
+      color: blueviolet;
+      text-decoration: none;
+      }
+    }
+  
+    .Google{
+      text-align: center;
+      margin-top: 1em;
+    }
+  }
+  
+  .Text{
+     margin-top: 5em;
+     background-color: rgb(244, 213, 176) ;
+     padding-left: 0.9em;
+     padding-right: 0.9em;
+     outline: 3px solid rgb(155, 46, 16) ;
+  
+  }

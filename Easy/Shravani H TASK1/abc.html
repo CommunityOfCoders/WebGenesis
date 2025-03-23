@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        body {
+            background-color: #aec4e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+            padding: 10px;
+        }
+
+        .container {
+            background-color: darkgray ;
+            border-radius: 5px;
+            
+            width: 100%;
+            max-width: 400px;
+            
+        }
+
+        .tabs {
+            display: flex;
+            width: 100%;
+            position: relative;
+        }
+
+        .tab-input {
+            display: none;
+        }
+
+        .tab-label {
+            flex: 1;
+            text-align: center;
+            padding: 20px 0;
+            background-color:lightblue ;
+            
+            
+            font-weight: bold;
+            color:azure ;
+            
+        }
+        .tab-content {
+            display: none;
+            padding: 30px;
+        }
+        
+        #login-tab:checked ~ .login-content {
+            display: block;
+        }
+
+        #signup-tab:checked ~ .signup-content {
+            display: block;
+        }
+        
+
+        #login-tab:checked ~ .tabs .login-label {
+            background-color: white;
+            color: #2196F3;
+        }
+
+        #signup-tab:checked ~ .tabs .signup-label {
+            background-color: white;
+            color: #2196F3;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #2196F3;
+            outline: none;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+
+        
+
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="tabs" id="login-tab" class="tab-input" checked>
+        <input type="radio" name="tabs" id="signup-tab" class="tab-input">
+        
+        <div class="tabs">
+            <label for="login-tab" class="tab-label login-label">Login</label>
+            <label for="signup-tab" class="tab-label signup-label">Sign Up</label>
+        </div>
+
+        <div class="tab-content login-content">
+            <h2>Welcome Back</h2>
+            <form>
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+
+        <div class="tab-content signup-content">
+            <h2>Create Account</h2>
+            <form>
+                <div class="input-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-confirm">Confirm Password</label>
+                    <input type="password" id="signup-confirm" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
