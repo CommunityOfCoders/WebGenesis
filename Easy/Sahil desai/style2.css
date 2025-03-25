@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Login Box */
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Input Fields Styling */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+    border: 2px solid #2575fc;
+    background-color: #fff;
+}
+
+.input-box label {
+    position: absolute;
+    left: 40px;
+    top: 12px;
+    font-size: 14px;
+    color: #888;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #2575fc;
+}
+
+/* Icons inside input fields */
+.input-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+}
+
+/* Forgot Password Link */
+.forgot {
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.forgot a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d63d0;
+}
+
+/* New Account Link */
+.newlog {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.newlog a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+.newlog a:hover {
+    text-decoration: underline;
+}
