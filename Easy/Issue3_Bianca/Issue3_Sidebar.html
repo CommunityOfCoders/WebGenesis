@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Side Menu</title>
+    <style>
+        body {
+            background-color: #53a8b6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: flex-start;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #2e79ba;
+            color: white;
+            position: fixed;
+            left: -250px;
+            top: 0;
+            transition: 0.3s;
+            padding-top: 60px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background: #5585b5;
+        }
+        .menu-btn {
+            font-size: 30px;
+            cursor: pointer;
+            padding: 20px;
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            background: none;
+            border: none;
+            color: white;
+            z-index: 1000;
+        }
+        .container {
+            margin-left: 0;
+            transition: margin-left 0.3s;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        #menu-toggle {
+            display: none;
+        }
+        #menu-toggle:checked ~ .sidebar {
+            left: 0;
+        }
+        #menu-toggle:checked ~ .container {
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">&#9776;</label>
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+</div>
+<h1>My website!</h1>
+</body>
+</html>
