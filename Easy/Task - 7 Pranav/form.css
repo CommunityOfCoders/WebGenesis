@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    /* background-color: #4f7c82; */
+    align-items: center;
+}
+
+
+#progress{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    border: 1px solid #0b2e33;
+    width: 40%;
+    height: 5%;
+    top: 20px;
+    left: 30%;
+    border-radius: 140px;
+  
+}
+#patch1{
+    position: relative;
+    width: 20%;
+    height: auto;
+    background-color: #0b2e33;
+    
+    
+}
+/* Main container */
+#div-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Pushes form below progress bar */
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px; /* Creates space below progress bar */
+    padding-bottom: 5%;
+}
+
+/* Each form section */
+.form-group {
+    width: 90%; /* Consistent width */
+    max-width: 400px; /* Limits the max width for better design */
+    height: auto; /* Adjusts height dynamically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 15px; /* Adds space between questions */
+    border: 1px solid #0b2e33;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* Label styling */
+.form-group label {
+    color: #0b2e33;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px; /* Space between label and input */
+}
+
+/* Input fields */
+.form-group input[type="text"],
+.form-group select{
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #0b2e33;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    padding-bottom: 10px;
+}
+
+
+/* Checkbox container */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Spacing between checkboxes */
+}
+
+/* Checkbox inputs */
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between checkbox and text */
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+
+}
+
+input[type="checkbox"]:checked {
+    background-color: #0b2e33; /* Background blue hoga jab tick hoga */
+    border: 2px solid #0b2e33; /* Border bhi same blue rahega */
+}
+
+.form-group ::placeholder{
+    color: #0b2e33;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#save{
+    font-family: Poppins;
+    padding: 10px;
+    border: none;
+    color: #4f7c82;
+    background-color: #0b2e33;
+    border-radius: 10px ;
+}
+
+#goback{
+    font-family: Poppins;
+    padding: 10px;
+    border: 1px solid #0b2e33;
+    background-color: #4f7c82;
+    color: #0b2e33;
+    border-radius: 10px ;
+}
+
+#save a{
+    text-decoration: none;
+    color: #4f7c82;
+}
+
+#goback a{
+    text-decoration: none;
+    color: #0b2e33;
+}
