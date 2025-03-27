@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, rgb(218, 82, 82), rgb(241, 155, 169));
+    font-family: sans-serif;
+}
+
+.container {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin: 6% auto;
+    top: 150px;
+    overflow: hidden;
+}
+
+.form-button {
+    display: flex;
+    background-color: #f5f5f5;
+    width: 200px;
+    height: 35px;
+    justify-content: space-between;
+    margin: 30px;
+    border-radius: 5px;
+    position: relative;
+    left: 150px;
+}
+
+.form-button button {
+    width: 80px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    padding: 10px 30px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.btn {
+    height: 35px;
+    width: 100px;
+    border-radius: 30px;
+    position: absolute;
+    background: linear-gradient(135deg, #ff6f61, #ffcc5c);
+    transition: left 0.5s;
+}
+
+.form-signup {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    right: 110px;
+    top: 100px;
+    transition: left 0.5s; 
+}
+
+.input-type {
+    padding: 10px 0;
+    margin: 5px 0;
+    outline: none;
+    border-radius: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    background: transparent;
+}
+
+.login-btn {
+    position: relative;
+    top: 18px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #ff6f61, #ffcc5c);
+    border-radius: 30px;
+}
+
+.form-signup button {
+    height: 0;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-signup span span {
+    color: #777;
+    bottom: 63px;
+    position: absolute;
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+#Signup {
+    left: 300px; 
+}
+
+#Login {
+    left: -20px; 
+}
