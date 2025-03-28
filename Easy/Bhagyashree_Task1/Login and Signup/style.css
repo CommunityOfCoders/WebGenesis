@@ -104,7 +104,7 @@ form {
     }
 
     .form-container {
-        width: 200%; /* Forms will take up 80% of the screen width */
+        width: 200%; 
         padding: 50px;
     }
 
@@ -127,7 +127,7 @@ form {
 
 @media (max-width: 480px) {
     .form-container {
-        width: 90%; /* Forms will take up 90% of the screen width */
+        width: 90%; 
         padding: 30px;
     }
 
