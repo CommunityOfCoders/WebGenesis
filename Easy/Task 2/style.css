@@ -1,0 +1,70 @@
+body{
+    background-image: url(bg\ image2.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.dd button{
+    cursor: pointer;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 300px;
+    height: 60px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: maroon;
+}
+.account{
+    margin-top: 15px;
+}
+.account a{
+    background-color: rgb(193, 223, 175);
+    cursor: pointer;
+    border-radius: 50px;
+    border: 3px solid green;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(18, 170, 18);
+    text-align: center;
+}
+.dd a{
+    display: block;
+    position: relative;
+}
+.dd .content{
+    display: none;
+}
+.dd:hover .content{
+    display: block;
+}
+.dd button:hover{
+    background-color: rgb(182, 178, 178);
+}
+.content a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: brown;
+    font-family: monospace;
+    background-color: rgb(216, 213, 213) ;
+    padding: 10px;
+}
+.content a:hover{
+    background-color: rgb(182, 178, 178);
+}
+.tournaments{
+    display: flex;
+}
+.bar{
+    background-color: rgb(216, 213, 213) ;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
