@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="progress">
+        <div id="patch1"></div>
+        <div id="patch2"></div>
+        <div id="patch3"></div>
+        <div id="patch4"></div>
+        <div id="patch5"></div>
+    </div>
+    <div id="div-container">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+        </div>
+    
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" placeholder="Age">
+        </div>
+    
+        <div class="form-group">
+            <label for="superhero">Favorite Superhero:</label>
+            <select id="superhero" name="superhero">
+                <option value="spiderman">Spider-Man</option>
+                <option value="batman">Batman</option>
+                <option value="superman">Superman</option>
+                <option value="ironman">Iron Man</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label>Choose Your Superpowers:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="powers" value="flight"> Flight</label>
+                <label><input type="checkbox" name="powers" value="strength"> Super Strength</label>
+                <label><input type="checkbox" name="powers" value="invisibility"> Invisibility</label>
+                <label><input type="checkbox" name="powers" value="telekinesis"> Telekinesis</label>
+                <label><input type="checkbox" name="powers" value="speed"> Speed</label>
+                <label><input type="checkbox" name="powers" value="time-travel"> Time Travel</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Enter Your Own Superhero Name:</label>
+            <input type="text" id="super-name" name="super-name" placeholder="Supes">
+        </div>
+        <div class="button">
+            <button id="save"><a href="">Save Changes</a></button>
+            <button id="goback"><a href="index.html">Previous Page</a></button>
+        </div>
+    </div>  
+    <script src="script.js"></script>  
+</body>
+</html>
