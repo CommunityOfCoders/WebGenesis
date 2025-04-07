@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+   height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #1A2980, #26D0CE); 
+    color: #333;
+    
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(120deg, #FF512F, #DD2476); /* Vibrant Red to Purple */
+    color: white;
+    padding: 35px 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Section Styling */
+section {
+    padding: 25px;
+    margin: 25px auto;
+    width: 80%;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff5733;
+    text-transform: uppercase;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+    font-weight: bold;
+}
+
+/* Skills Section */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+ul li {
+    background-color: #6A0572; 
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    background-color: #9C27B0; 
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #FF4081;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: linear-gradient(90deg, #FF8C00, #FF0080); 
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #FF0080, #FF8C00);
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    font-size: 20px;
+    color: #E91E63;
+    font-weight: bold;
+}
