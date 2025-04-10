@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Retro PC | Calculator</title>
+        <meta name="description" content="Calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/jpeg" href="RetroCon.jpeg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="calc.css">
+    </head>
+    <body>
+      <div class="bg">
+        <div class="calculator">
+        <a href="index.html"> <img class="back" src="back.png" ></a>
+        <input type="text" class="display" disabled>
+        <div class="options">
+            <button  style="background-color: rgb(191, 17, 17);" onclick="cleardisplay()">AC</button>
+            <button  style="background-color: rgb(85, 90, 78);" onclick="del()">DEL</button>
+            <button style="background-color: rgb(85, 90, 78);"  onclick="appendValue('(')">(</button>
+            <button style="background-color: rgb(85, 90, 78);"  onclick="appendValue(')')">)</button>
+            <button style="background-color: rgb(163, 115, 27);"  onclick="appendValue('sin(')">sin</button>
+            <button style="background-color: rgb(163, 115, 27);"  onclick="appendValue('cos(')">cos</button>
+            <button style="background-color: rgb(163, 115, 27);" onclick="appendValue('tan(')">tan</button>
+            <button style="background-color: rgb(84, 84, 188);" onclick="appendValue('π')">π</button>
+            <button style="background-color: rgb(163, 115, 27);"  onclick="appendValue('sin⁻¹(')">sin<sup>-1</sup></button>
+            <button style="background-color: rgb(163, 115, 27);"  onclick="appendValue('cos⁻¹(')">cos<sup>-1</sup></button>
+            <button style="background-color: rgb(163, 115, 27);"  onclick="appendValue('tan⁻¹(')">tan<sup>-1</sup></button>
+            <button style="background-color: rgb(84, 84, 188);"  onclick="appendValue('e')">e</button>
+            <button  onclick="appendValue('7')">7</button>
+            <button  onclick="appendValue('8')">8</button>
+            <button  onclick="appendValue('9')">9</button>
+            <button style="background-color: rgb(85, 90, 78);"  onclick="appendValue('÷')">÷</button>
+            <button  onclick="appendValue('4')">4</button>
+            <button  onclick="appendValue('5')">5</button>
+            <button  onclick="appendValue('6')">6</button>
+            <button style="background-color: rgb(85, 90, 78);"  onclick="appendValue('x')">x</button>
+            <button  onclick="appendValue('1')">1</button>
+            <button  onclick="appendValue('2')">2</button>
+            <button  onclick="appendValue('3')">3</button>
+            <button style="background-color: rgb(85, 90, 78);"  onclick="appendValue('-')">-</button>
+            <button  onclick="appendValue('00')">00</button>
+            <button  onclick="appendValue('0')">0</button>
+            <button  onclick="appendValue('.')">.</button>
+            <button style="background-color: rgb(85, 90, 78);" onclick="appendValue('+')">+</button>
+            <button style="background-color: rgb(152, 135, 21);" >v1.0</button>
+            <button style="background-color: rgb(84, 84, 188);"  onclick="appendValue('√')">√</button>
+            <button style="background-color: rgb(84, 84, 188);"  onclick="appendValue('^')">EXP</button>
+            <button style="background-color: rgb(53, 97, 141);"  onclick="calc()">=</button>
+        </div>
+        </div>
+</div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

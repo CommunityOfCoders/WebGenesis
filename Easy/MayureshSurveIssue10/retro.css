@@ -1,0 +1,131 @@
+*{
+    font-family: "Press Start 2P";
+}
+
+body{
+    background: url(retrobg.jpeg) no-repeat center center fixed;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    margin: 2em 0em;
+}
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    margin: 2em 0em;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    width: 100vw;
+    height: 100vh;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appname{
+    font-size: 0.7em;
+    text-align: center;
+    color: white;
+}
+
+.homeimg, .back{
+    width: 3.25em;
+    height: 3.25em;
+}
+
+
+.box{
+    display: none;
+    margin-top: 3em;
+    margin-left: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 0.5em;
+    max-width:100vw;
+    max-height: 100vh;
+    width: 90%;
+    height: 80%;
+    padding: 0.75em;
+}
+
+.back{
+    position: absolute;
+    left: 5.25em;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 2em;
+    height: auto;
+}
+
+.userimg{
+    width: 100%;
+    max-width: 7em;
+    height: auto;
+    border: 1px solid rgb(191, 191, 191);
+}
+
+.popup{
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 22em;
+    height: 22em;
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.close, .prev, .next{
+    width:2em;
+    height:2em;
+}
+
+.close{
+    background-color: rgb(169, 29, 29);
+    margin-right: 0.25em;
+}
+
+.navbar, .slide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 22em;
+    background-color: rgb(22, 22, 112);
+    border: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+}
+
+.popimg{
+    margin-top: 0.25em;
+    width: 16em;
+    height: 16em;
+}
+
+.name{
+    color:white;
+    margin-left: 0.25em;
+}
