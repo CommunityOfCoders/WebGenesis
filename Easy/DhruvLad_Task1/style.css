@@ -1,0 +1,109 @@
+body{
+    display: flex;
+    background-image: url('1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content:  center;
+    align-items: center;
+}
+.box {
+    margin: 100px;
+    margin-top: 200px;
+    height: 45vh;
+    width: 25vw;
+    padding: 50px;
+    padding-top: 20px;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    border: 2px solid rgb(24, 15, 49);
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px 9px rgb(0 1 2 / 14%);
+}
+.box h1{
+    text-align: center;
+    font-size:xx-large;
+    color: rgb(121, 171, 171);
+}
+
+.ip {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #1f0abd;
+}
+
+.ipbox{
+    height: 45px;
+    width: 100%;
+    padding: 0 15px;
+    border-radius: 13px;
+    border: 2px solid rgba(24, 15, 49, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    color:aliceblue;
+    font-size: 1.1rem;
+    transition: all 0.7s ease-out;
+}
+.ipbox:focus{
+    outline: none;
+    border-color: rgb(26, 187, 187);
+}
+.ipbox::placeholder {
+    color: rgba(121, 171, 171, 0.7);
+}
+.check{
+    display: flex;
+    align-items: center;
+    color: rgb(121, 171, 171);
+    font-size: large;
+    margin-top: 10px;
+}
+.check a{
+    text-decoration: none;
+    color: rgb(3, 138, 138);
+}
+.check a:hover{
+    text-decoration: underline;
+    color:rgb(8, 190, 190);
+}
+
+.check > span{
+    position: relative;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.SignUp{
+    display: flex;
+    align-items: center;
+    color: rgb(121, 171, 171);
+    font-size: large;
+    margin:auto;
+
+}
+.SignUp > span{
+    position: relative;
+    padding: 10px;
+    padding-top: 5px;
+}
+.SignUp a{
+    text-decoration: none;
+    color: rgb(3, 138, 138);
+}
+.SignUp a:hover{
+    text-decoration: underline;
+    color:rgb(8, 190, 190);
+}
+.Button{
+    display: flex;
+    justify-content: center;
+}
+.Button button{
+    height: 40px;
+    width: 110px;
+    font-size: large;
+    border-radius: 15px;
+    color: rgba(121, 171, 171, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+}
