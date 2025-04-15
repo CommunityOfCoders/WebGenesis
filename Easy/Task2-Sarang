@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Bar with Dropdown</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">CLICK</a></li>
+      
+      <li class="dropdown"><a href="#">SERVICES</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-submenu"></li>
+          <li class=""><a href="#">Mentor chat</a></li>
+             
+          <li><a href="#">Video chat</a></li>
+          <li><a href="#">Home service</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">CONTACT US</a></li>
+    </ul>
+  </nav>
+                  
+</body>
+</html>
